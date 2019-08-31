@@ -6,10 +6,11 @@ import './App.css';
 
 //components
 import WelcomePage from './components/welcomepage/WelcomePage';
-import About from './components/about/AboutPage';
+import AboutHeader from './components/about/AboutHeader';
 import Nav from './components/nav/Nav';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
+import ProjectsHeader from './components/projects/ProjectsHeader';
+import ContactHeader from './components/contact/ContactHeader';
+import ContactPage from './components/contact/ContactPage'
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
         <Nav />
       </div>
       {/* <Route path='/about' component={About} /> */}
-      <About />
-      <Projects />
-      <Contact />
+      <AboutHeader />
+      <ProjectsHeader />
+      <ContactHeader />
+      <ContactPage />
     </div>
   );
 }
