@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useTrail, animated } from 'react-spring'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './WelcomePage.css'
 import Animation from './animation.mp4'
+
 
 const words  = ['Hi', "I'm", 'Mykol']
 const config = { mass: 5, tension: 2000, friction: 200 }
@@ -31,7 +32,9 @@ const WelcomePage = () => {
             <animated.div style={{ height }}>{words[index]}</animated.div>
           </animated.div>
         ))}
+        {/* <Link to='about'> */}
          <button className='button'>Click to see more</button>
+         {/* </Link> */}
          </div>
     </div>
   )

@@ -4,7 +4,6 @@
     position: sticky;
 }
 
-h3 {
-    margin-right: 0.5%;
-    padding-left: 2%;
+.text {
+    margin: 2%;
 }
