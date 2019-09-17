@@ -7,3 +7,9 @@
 .text {
     margin: 2%;
 }
+
+.text:hover {
+    text-decoration: underline;
+    text-decoration-color: purple;
+    color: plum;
+}

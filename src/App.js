@@ -11,20 +11,24 @@ import Nav from './components/nav/Nav';
 import ProjectsHeader from './components/projects/ProjectsHeader';
 import ContactHeader from './components/contact/ContactHeader';
 import ContactPage from './components/contact/ContactPage'
+import Footer from './components/footer/Footer'
+import Projects from './components/projects/Projects'
+
+
 
 function App() {
   return (
     <div className="container">
-      {/* <Route exact path='/' component={WelcomePage} /> */}
       <WelcomePage />
       <div>
         <Nav />
       </div>
-      {/* <Route path='/about' component={About} /> */}
       <AboutHeader />
       <ProjectsHeader />
+      <Projects />
       <ContactHeader />
       <ContactPage />
+      <Footer />
     </div>
   );
 }

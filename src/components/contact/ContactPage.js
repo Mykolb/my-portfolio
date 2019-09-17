@@ -11,7 +11,8 @@ import './ContactPage.css'
 const ContactPage = ({ errors, touched, values, status }) => {
     
 //not functional yet 
-//need hooked up to google api
+//need hooked up to google api & footer needs created
+
 
     return(
         <div className='contact-container'>
@@ -58,6 +59,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fontSize='small'
             fullWidth
             color='primary'>
+            
             Submit the form</Button>
              </Form>
         </div>
