@@ -6,13 +6,15 @@ import './App.css';
 
 //components
 import WelcomePage from './components/welcomepage/WelcomePage';
-import AboutHeader from './components/about/AboutHeader';
+import AboutHeader from './components/about/AboutHeader'
+import ProfilePic from './components/about/ProfilePic'
 import Nav from './components/nav/Nav';
 import ProjectsHeader from './components/projects/ProjectsHeader';
+import Projects from './components/projects/Projects';
 import ContactHeader from './components/contact/ContactHeader';
-import ContactPage from './components/contact/ContactPage'
-import Footer from './components/footer/Footer'
-import Projects from './components/projects/Projects'
+import ContactPage from './components/contact/ContactPage';
+import Footer from './components/footer/Footer';
+
 
 
 
@@ -24,6 +26,7 @@ function App() {
         <Nav />
       </div>
       <AboutHeader />
+      <ProfilePic />
       <ProjectsHeader />
       <Projects />
       <ContactHeader />

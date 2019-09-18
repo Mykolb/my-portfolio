@@ -19,9 +19,11 @@ const Nav = () => {
     }
     
 
+
     return(
         <div className='nav-container'>
             {/* { 'activeClassName' === 'active' ? '#000000' : '#800080' } */}
+            {/* <nav> */}
             <Link 
             to='home' 
             activeClass='active'  
@@ -30,8 +32,7 @@ const Nav = () => {
             offset={-70}
             duration={500}
             className='text'
-            onClick={scrollToTop}
-            >Home</Link>
+            onClick={scrollToTop}>Home</Link>
 
             <Link 
             to='about' 
@@ -50,7 +51,8 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className='text'>Projects</Link>
+            className='text'
+            onClick={scrollTo}>Projects</Link>
 
             <Link 
             to='contact' 
@@ -61,9 +63,11 @@ const Nav = () => {
             duration={500}
             className='text'
             onClick={scrollToBottom}>Contact</Link>
+            {/* </nav> */}
         </div>
     )
 }
+
 
 
 export default Nav;

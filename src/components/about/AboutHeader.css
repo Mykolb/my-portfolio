@@ -1,9 +1,16 @@
 .about-header {
     margin-top: 5%;
     display: flex;
-    justify-content: center;
     border: 5px solid purple;
+    justify-content: center;
 }
+
+/* .header {
+    justify-content: center;
+    border: 2px solid blue;
+    height: 30px;
+} */
+
 
 .avatar-container {
     border: 2px dashed green;
@@ -11,5 +18,4 @@
 
 .avatar-img {
     margin: 10%;
-    
 }

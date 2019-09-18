@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {  withFormik, Form, Field} from 'formik';
 import { TextField, Select } from 'formik-material-ui';
 import Button from '@material-ui/core/Button';
@@ -10,9 +10,17 @@ import './ContactPage.css'
 
 const ContactPage = ({ errors, touched, values, status }) => {
     
-//not functional yet 
-//need hooked up to google api & footer needs created
+    const [signin, setSignin] = useState([])
+        //need status
+        useEffect(() => {
+            if(status) {
+                setSignin([...signin, status])
+            }
+        }, [status])
 
+
+
+    
 
     return(
         <div className='contact-container'>
@@ -58,9 +66,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             margin='normal'
             fontSize='small'
             fullWidth
-            color='primary'>
-            
-            Submit the form</Button>
+            color='primary'>Submit the form</Button>
              </Form>
         </div>
     )
@@ -91,7 +97,22 @@ validationSchema: Yup.object().shape({
 
 
 handleSubmit(values, {resetForm, setErrors, setSubmitting, setStatus}) {
-    
+    if(!values.email) {
+        setErrors({ email: 'Please add an email address'})
+    } else {
+        axios
+          .post('https://formspree.io/xwdeljrm', values)
+          .then(res => {
+            console.log(res.data)
+            setStatus();
+            resetForm();
+            setSubmitting(false);       
+          })
+          .catch(err => {
+              console.log(err)
+              setSubmitting(false);
+          })
+    }
 }
 
 

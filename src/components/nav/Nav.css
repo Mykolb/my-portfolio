@@ -1,8 +1,8 @@
 .nav-container {
     border: 1px solid blue;
-    display: flex;
-    position: sticky;
+    overflow: hidden;
 }
+
 
 .text {
     margin: 2%;
