@@ -9,12 +9,23 @@
     color: #211f1f;
 }
 
- 
+ #icon1:hover {
+    text-decoration: underline;
+ }
+
 #icon2 {
     color: #0077B5;
 }
+
+#icon2:hover {
+    text-decoration: underline;
+ }
 
 
  #icon3 {
     color: #1DA1F2;
 }
+
+#icon3:hover {
+    text-decoration: underline;
+ }

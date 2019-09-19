@@ -8,6 +8,7 @@ import './ContactPage.css'
 
 
 
+
 const ContactPage = ({ errors, touched, values, status }) => {
     
     const [signin, setSignin] = useState([])
@@ -18,14 +19,16 @@ const ContactPage = ({ errors, touched, values, status }) => {
             }
         }, [status])
 
-
+//need to add modal to pop up after form is submitted
 
     
 
     return(
         <div className='contact-container'>
-            <h3 className='contact-title'>Interested? Send me a message!</h3>
-            <Form>
+
+            <Form className='form'>
+            <h2 className='contact-header'>CONTACT</h2>
+            <h3 className='contact-subheader'>Interested? Send me a message!</h3>
             {touched.name && errors.name && <p>{errors.name}</p> }
             <Field
             className='field'
@@ -68,6 +71,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fullWidth
             color='primary'>Submit the form</Button>
              </Form>
+            
         </div>
     )
 }

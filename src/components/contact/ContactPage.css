@@ -1,16 +1,31 @@
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 45%;
+    justify-content: center;
+    width: 100%;
     height: auto;
     border: 2px solid gray;
+}
+
+
+.contact-header {
+    border: 5px solid teal;
+    text-align: center;
+}
+
+.contact-subheader {
+    border: 5px solid teal;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width: 45%; 
     opacity: 0.9;
     transition: 0.3s;
     border-radius: 10px;
     padding: 2.5%;
-}
-
-.contact-title {
-    margin: 0 auto;
+    border: 2px solid red;
 }

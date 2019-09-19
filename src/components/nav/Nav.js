@@ -21,9 +21,9 @@ const Nav = () => {
 
 
     return(
-        <div className='nav-container'>
-            {/* { 'activeClassName' === 'active' ? '#000000' : '#800080' } */}
-            {/* <nav> */}
+        <div className='wrapper'>
+            {/* { 'nav-container' === 'active' ? 'margin: 0;' : 'position:fixed' } */}
+            <nav className='nav'>
             <Link 
             to='home' 
             activeClass='active'  
@@ -63,7 +63,7 @@ const Nav = () => {
             duration={500}
             className='text'
             onClick={scrollToBottom}>Contact</Link>
-            {/* </nav> */}
+            </nav>
         </div>
     )
 }
