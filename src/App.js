@@ -9,7 +9,7 @@ import WelcomePage from './components/welcomepage/WelcomePage';
 import AboutHeader from './components/about/AboutHeader'
 import ProfilePic from './components/about/ProfilePic'
 import Nav from './components/nav/Nav';
-import ProjectsHeader from './components/projects/ProjectsHeader';
+// import ProjectsHeader from './components/projects/ProjectsHeader';
 import Projects from './components/projects/Projects';
 import ContactPage from './components/contact/ContactPage';
 import Footer from './components/footer/Footer';
@@ -26,7 +26,7 @@ function App() {
       </div>
       <AboutHeader />
       <ProfilePic />
-      <ProjectsHeader />
+      {/* <ProjectsHeader /> */}
       <Projects />
       <ContactPage />
       <Footer />

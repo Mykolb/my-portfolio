@@ -22,12 +22,22 @@ const useStyles = makeStyles({
     display: 'flex',
     flexWrap: 'wrap',
   },
+  headingContainer: {
+    margin: '0 auto',
+    justifyContent: 'center',
+    border: '5px solid brown',
+    width: '100%',
+    margin: '5%'
+  },
+  heading: {
+    textAlign: 'center'
+  },
   card: {
     maxWidth: 400,
     flexDirection: 'column',
     margin: 'auto',
     marginTop: '2.5%',
-    // padding: '1%',
+    padding: '1%',
     justifyContent: 'center',
     alignItems: 'center',
     border: '7px solid black'
@@ -43,7 +53,9 @@ export default function Projects() {
 
   return (
       <div className={classes.container}>
-
+        <div className={classes.headingContainer}>
+          <h2 className={classes.heading}>PROJECTS</h2>
+          </div>
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
