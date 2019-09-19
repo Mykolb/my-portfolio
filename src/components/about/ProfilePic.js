@@ -13,18 +13,29 @@ import Profile from './profile.jpg'
           gridGap: theme.spacing(1),
           margin: '5% 4% 0% 4%',
         },
+        aboutContainer: {
+          margin: '0 auto',
+          justifyContent: 'center',
+          border: '5px solid gold',
+          width: '100%',
+        },
+        aboutHeading: {
+          textAlign: 'center',
+        },
         bigAvatar: {
           width: 300,
           height: 300,
-          padding: '2%',
+          margin: '10%',
+          borderRadius: '4%'
         },
         bioContainer: {
-          flexGrow: 1,
           border: '4px solid brown',
-          width: '80%'
+          width: '100%',
+          paddingLeft: '2%'
         },
         bio: {
           textAlign: 'center',
+          width: '100%',
         }
       }));
       
@@ -33,6 +44,10 @@ import Profile from './profile.jpg'
 
 
     return(
+      <div>
+        <div className={classes.aboutContainer}>
+        <h2 className={classes.aboutHeading}>ABOUT</h2>
+        </div>
         <div className={classes.entireContainer}>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
         <Avatar 
@@ -51,6 +66,7 @@ import Profile from './profile.jpg'
        </p>
        </Grid>
       </div>
+        </div>
         </div>
     )
 }

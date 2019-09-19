@@ -37,6 +37,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     margin: 'auto',
     marginTop: '2.5%',
+    marginBottom: '2.5%',
     padding: '1%',
     justifyContent: 'center',
     alignItems: 'center',
