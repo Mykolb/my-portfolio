@@ -10,9 +10,6 @@ import Typography from '@material-ui/core/Typography'
 
 
 //create an array of projects and map over them to display projects 
-
-
-
 // const projectArray = ["project1", "project2", "project3", "project4]
 
 

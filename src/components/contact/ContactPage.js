@@ -5,8 +5,13 @@ import Button from '@material-ui/core/Button';
 import * as Yup from 'yup';
 import axios from 'axios'
 import './ContactPage.css'
-
-
+//dialog for button
+import { withStyles } from '@material-ui/core/styles';
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import Typography from '@material-ui/core/Typography';
 
 
 const ContactPage = ({ errors, touched, values, status }) => {
@@ -19,9 +24,51 @@ const ContactPage = ({ errors, touched, values, status }) => {
             }
         }, [status])
 
+//for button dialog
+    const [open, setOpen] = useState(false);
+     const handleClickOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    }
 //need to add modal to pop up after form is submitted
+    const styles = theme => ({
+    root: {
+      margin: 0,
+      padding: theme.spacing(2),
+    },
+    closeButton: {
+      position: 'absolute',
+      right: theme.spacing(1),
+      top: theme.spacing(1),
+      color: theme.palette.grey[500],
+    },
+  });
+  
+    const DialogTitle = withStyles(styles)(props => {
+        const { children, classes, onClose } = props;
+    return (
+      <MuiDialogTitle disableTypography className={classes.root}>
+        <Typography variant="h6">{children}</Typography>
+      </MuiDialogTitle>
+    );
+  });
+  
+    const DialogContent = withStyles(theme => ({
+    root: {
+      padding: theme.spacing(2),
+    },
+  }))(MuiDialogContent);
+  
+     const DialogActions = withStyles(theme => ({
+    root: {
+      margin: 0,
+      padding: theme.spacing(1),
+    },
+  }))(MuiDialogActions);
+  
 
-    
 
     return(
         <div className='contact-container'>
@@ -68,8 +115,25 @@ const ContactPage = ({ errors, touched, values, status }) => {
             type='submit'
             margin='normal'
             fontSize='small'
+            onClick={handleClickOpen}
             fullWidth
             color='primary'>Submit the form</Button>
+
+        <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                Contact Submission
+            </DialogTitle>
+            <DialogContent dividers>
+                <Typography gutterBottom>
+                Your form was submitted. Thank you.
+             </Typography>
+            </DialogContent>
+            <DialogActions>
+             <Button onClick={handleClose} color="primary">
+                Return to website
+            </Button>
+             </DialogActions>
+        </Dialog>
              </Form>
             
         </div>
@@ -77,7 +141,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
 }
 
 
-const FormikMessage = withFormik({
+ const FormikMessage = withFormik({
     mapPropsToValues({ name, email, message }) {
         return{
             name: name || '',
