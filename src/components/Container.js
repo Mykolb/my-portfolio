@@ -1,5 +1,5 @@
 import React from 'react'
-import WelcomePage from './welcomepage/WelcomePage';
+import Design from './welcomepage/Design'
 import Nav from './nav/Nav';
 import ProfilePic from './about/ProfilePic';
 import Projects from './projects/Projects';
@@ -11,7 +11,7 @@ import Footer from './footer/Footer';
 export const Container = () => {
     return(
         <div>
-        <WelcomePage />
+        <Design />
         <Nav />
         <ProfilePic />
         <Projects />

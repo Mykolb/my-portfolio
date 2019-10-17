@@ -1,0 +1,21 @@
+
+.design-background {
+  background: 	#483D8B;
+}
+
+.button {
+  border: 1px solid blue;
+  position: absolute;;
+  border-radius: 30px;
+  width: 150px;
+  height: 35px;
+  margin-top: 3%;
+  border: 1px solid gray;
+  /* text-decoration: none; */
+}
+
+ .button:hover {
+  background-color: lavender;
+  border: purple;
+}
+
