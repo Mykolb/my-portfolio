@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Particles from 'react-particles-js';
 import './Design.css';
 
@@ -8,7 +8,7 @@ import './Design.css';
 const Design = () => {
 
 return(
-    <div>
+    <div className='welcome-div'>
        <Particles
 	className='design-background'
     params={{
@@ -66,10 +66,13 @@ return(
 	        }
 	    }
 	}} />
-	<button classsName='button'>Click me</button>
+	<button className='welcome-btn'>Click me
+	&nbsp;  
+	<i class="fas fa-arrow-alt-circle-right" data-fa-transform="rotate--30" />
+	</button>
     </div>
 
-
+//font awesome has rotating option for svg icons, need to install fontawesome as dependency to use it for my button arrow
 )}
 
 
