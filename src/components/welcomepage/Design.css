@@ -1,7 +1,8 @@
 
 .design-background {
-  background: 	#483D8B;
+  background: 	rgb(27, 37, 41);
 }
+/* #483D8B; */
 
 .welcome-div {
   position: relative;

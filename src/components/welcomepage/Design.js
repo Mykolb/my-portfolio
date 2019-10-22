@@ -1,11 +1,20 @@
 import React from 'react'
 import Particles from 'react-particles-js';
+import { Link, withRouter} from 'react-router-dom';
 import './Design.css';
 
 
 
 
-const Design = () => {
+const Design = (props) => {
+
+
+
+const onClick = () => {
+	console.log(onClick)
+	props.history.push('/about')
+}
+
 
 return(
     <div className='welcome-div'>
@@ -66,15 +75,21 @@ return(
 	        }
 	    }
 	}} />
-	<button className='welcome-btn'>Click me
+	<Link to='/about'>
+	<button 
+	className='welcome-btn'
+	onClick={onClick}
+	>Click me
 	&nbsp;  
 	<i class="fas fa-arrow-alt-circle-right" data-fa-transform="rotate--30" />
 	</button>
+	</Link>
     </div>
 
 //font awesome has rotating option for svg icons, need to install fontawesome as dependency to use it for my button arrow
 )}
 
 
+const designWithRouter = withRouter(Design)
 
-    export default Design;
+    export default designWithRouter;

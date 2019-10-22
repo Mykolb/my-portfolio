@@ -1,24 +1,26 @@
-/* .wrapper {
-    border: 1px solid blue;
-    overflow: hidden;
-}
-
-.text {
-    margin: 2%;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px;
-}
-
-.text:hover {
-    text-decoration: underline;
-    text-decoration-color: purple;
-    color: plum;
-}
-
-.sticky {
-    position: fixed;
+.nav-wrapper {
+    border: 3px solid green;
+    display: flex;
+    position: sticky;
     top: 0;
-    width: 100%;
-} */
+    background: rgb(17, 28, 32);
+    overflow:hidden;
+    z-index: 1; 
+}
+/* 
+zindex fixed overlapping nav */
+
+nav ul a {
+    margin: 0% 3% 0% 3%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    position: sticky;
+    text-transform: uppercase;
+
+}
+
+nav ul a:hover,
+nav ul a.active {
+    color: rgb(221, 30, 141);
+}
