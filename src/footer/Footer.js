@@ -1,11 +1,11 @@
 import React from 'react'
-import './Footer.css'
+import '../styles/Footer.scss';
 //fa-spin makes icons spin 
 
  const Footer = () => {
      return(
          <div className='footer-container'>
-             <div classname='icons'>
+             <div className='icons'>
 
              <a href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
                 <i className="fab fa-github fa-2x  fa-border" 

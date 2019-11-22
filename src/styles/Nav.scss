@@ -6,6 +6,13 @@
     background: rgb(17, 28, 32);
     overflow:hidden;
     z-index: 1; 
+
+    @media screen and (max-width: 500px) {
+        border: 1px solid blueviolet;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
 }
 /* 
 zindex fixed overlapping nav */
@@ -17,6 +24,16 @@ nav ul a {
     color: white;
     position: sticky;
     text-transform: uppercase;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        margin: 0% 3% 0% 3%;
+        font-size: 1rem;
+        position: relative;
+        flex-wrap: wrap;
+        
+
+    }
 
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import { Container } from './components/Container';
+import './styles/App.scss';
+import { Container } from './Container';
 
 
 

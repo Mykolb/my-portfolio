@@ -1,0 +1,61 @@
+
+.design-background {
+    background: 	rgb(27, 37, 41);
+
+   @media screen and (max-width:800px) {
+        background:  rgb(0, 153, 255);
+
+    }
+}
+  /* #483D8B; */
+  
+  .welcome-div {
+    position: relative;
+  }
+  
+  .introduction {
+    position: absolute;
+    border: 3px solid orange;
+    top: 40%;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+
+
+    @media screen and (max-width: 500px) {
+        border: 1px solid black;
+        top: 20%;
+        text-align:center;
+        height: 150px;
+    }
+  }
+  
+  .intro-header {
+    font-size: 2.5rem;
+    color: white;
+
+    @media screen and (max-width: 500px) {
+       font-size: 1.75rem;
+    }
+  }
+  
+//   .welcome-btn {
+//     border: 4px solid darkgrey;
+//     background-color: #1C00ff00;
+//     color: darkgrey;
+//     font-size: 1.5rem;
+//     position: absolute;
+//     border-radius: 10px;
+//     top: 65%;
+//     width: 15%;
+//     height: 40px;
+//     opacity: 0.5;
+//     left: 40%;
+  
+//     /* text-decoration: none; */
+//   }
+  
+//    .welcome-btn:hover {
+//     background-color: lavender;
+//     color: palevioletred;
+//   }
