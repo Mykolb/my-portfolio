@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     textAlign: 'center'
   },
   card: {
-    maxWidth: 400,
+    width: 400,
     flexDirection: 'column',
     margin: 'auto',
     marginTop: '2.5%',
@@ -42,7 +42,6 @@ const useStyles = makeStyles({
   },
   media: {
     height: 200,
-    width: 300
   },
 });
 
