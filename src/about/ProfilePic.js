@@ -47,7 +47,7 @@ import '../styles/About.scss'
     return(
       <div>
         <div className='aboutContainer'>
-        <h2 className='aboutHeading' style={{ textAlign: 'center'}}>ABOUT</h2>
+        <h2 className='aboutHeading' style={{ textAlign: 'center', fontFamily: 'Shadows Into Light, cursive', color: '#B3A190'}}>ABOUT</h2>
         </div>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>

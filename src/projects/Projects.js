@@ -27,7 +27,9 @@ const useStyles = makeStyles({
     margin: '5%'
   },
   heading: {
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'Shadows Into Light, cursive',
+    color: '#B3A190',
   },
   card: {
     width: 400,

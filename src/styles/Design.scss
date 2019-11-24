@@ -1,13 +1,10 @@
 
 .design-background {
-    background: 	rgb(27, 37, 41);
+    background: teal;
+    
 
-   @media screen and (max-width:800px) {
-        background:  rgb(0, 153, 255);
-
-    }
 }
-  /* #483D8B; */
+ 
   
   .welcome-div {
     position: relative;
@@ -15,7 +12,7 @@
   
   .introduction {
     position: absolute;
-    border: 3px solid orange;
+    // border: 3px solid orange;
     top: 40%;
     margin-left: 25%;
     width: 50%;
@@ -27,16 +24,36 @@
         top: 20%;
         text-align:center;
         height: 150px;
+        font-size: 1.25rem;
     }
   }
   
   .intro-header {
     font-size: 2.5rem;
-    color: white;
+    color: #B3A190;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.75rem;
+   }
 
     @media screen and (max-width: 500px) {
-       font-size: 1.75rem;
+       font-size: 1.3rem;
     }
+  }
+
+
+  .audio-div {
+    // color: white;
+    width: 30px;
+    height: 30px;
+
+    padding-top: 1%;
+  
+    @media screen and (max-width: 500px) {
+      width: 30px;
+      height: 30px;
+      padding-top: 1%;
+   }
   }
   
 //   .welcome-btn {

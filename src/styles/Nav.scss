@@ -3,7 +3,7 @@
     display: flex;
     position: sticky;
     top: 0;
-    background: rgb(17, 28, 32);
+    background:#FFFFFF;
     overflow:hidden;
     z-index: 1; 
 
@@ -21,9 +21,10 @@ nav ul a {
     margin: 0% 3% 0% 3%;
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: #B3A190;
     position: sticky;
     text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
 
     @media screen and (max-width: 500px) {
         flex-direction: column;
@@ -39,5 +40,5 @@ nav ul a {
 
 nav ul a:hover,
 nav ul a.active {
-    color: rgb(221, 30, 141);
+    color: #E63629;
 }
