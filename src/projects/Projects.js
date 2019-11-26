@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
-
+import '../styles/Projects.scss'
 
 //create an array of projects and map over them to display projects 
 // const projectArray = ["project1", "project2", "project3", "project4]
@@ -30,22 +30,27 @@ const useStyles = makeStyles({
     textAlign: 'center',
     fontFamily: 'Shadows Into Light, cursive',
     color: '#B3A190',
+    fontSize: '2rem',
   },
   card: {
     width: 400,
     flexDirection: 'column',
     margin: 'auto',
     marginTop: '2.5%',
-    marginBottom: '2.5%',
+    marginBottom: '1%',
     padding: '1%',
     justifyContent: 'center',
     alignItems: 'center',
-    border: '7px solid black'
+    // border: '7px solid black',
+    borderRadius: '15px',
+  
   },
   media: {
     height: 200,
   },
+
 });
+
 
 export default function Projects() {
   const classes = useStyles();
@@ -72,10 +77,10 @@ export default function Projects() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+        <Button size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer' style={{borderRadius: '5px'}}>
           Github
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" style={{borderRadius: '5px'}}>
         Website
         </Button>
       </CardActions>

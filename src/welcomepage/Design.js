@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import Particles from 'react-particles-js';
-import { Link, withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import '../styles/Design.scss';
+
+
 
 
 //color scheme
 // poppy #E63629 
 //yarrow #EBB604 
 //fawn #B3A190 
-//teal #008080
+//teal #008080 
 
 
 // hwi:
@@ -34,8 +36,11 @@ import '../styles/Design.scss';
 // https://media.merriam-webster.com/soundc11/bix/bixmic01.wav
 const Design = props => {
 
+	let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
 
-const sound = 'https://media.merriam-webster.com/soundc11/bix/bixmic01.wav'
+	const soundEffect = () => {
+		audio.play()
+	}
 
 return(
     <div className='welcome-div'>
@@ -100,15 +105,13 @@ return(
 	        }
 	    }
 	}} />
+
+
 	<div className='introduction'>
-		<h2 className='intro-header'> Mykol <em>(noun)</em></h2>
-<p className='intro-header'> Mi-chael {' '} 
-<audio controls className='audio-div'>
-	<source src={sound} type='audio/wav' />
-	Sorry, your browser does not support this audio player.
-</audio>
-</p>
-		<p className='intro-header'>Definition: Web Developer</p>
+		<h2 className='intro-header'> mykol <em>(noun)</em></h2>
+		{/* <p className='intro-header'>mi-chael</p> */}
+<p className='intro-header'>definition: web developer{' '}</p>
+<i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
 	</div>
 
     </div>

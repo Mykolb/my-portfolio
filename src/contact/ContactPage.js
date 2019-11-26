@@ -117,7 +117,8 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fontSize='small'
             onClick={handleClickOpen}
             fullWidth
-            color='primary'>Submit the form</Button>
+            style={{borderRadius: '15px'}}
+            >Submit the form</Button>
 
         <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
@@ -129,7 +130,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
              </Typography>
             </DialogContent>
             <DialogActions>
-             <Button onClick={handleClose} color="primary">
+             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px'}}>
                 Return to website
             </Button>
              </DialogActions>

@@ -4,6 +4,7 @@
     width: 100%;
     height: auto;
     border: 2px solid gray;
+    
 }
 
 
@@ -12,6 +13,7 @@
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     color: #B3A190;
+    font-size: 2rem;
 }
 
 .contact-subheader {
@@ -27,9 +29,11 @@
     width: 55%; 
     opacity: 0.9;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 2.5%;
-    border: 2px solid red;
+    border: 2px solid #B3A190;
+    box-shadow: 30px 30px 30px 30px lightgray; 
+   
 
 
     @media screen and (max-width:800px) {

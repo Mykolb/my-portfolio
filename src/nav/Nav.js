@@ -20,18 +20,23 @@ const Nav = () => {
         scroll.scrollToBottom();
       }
 
-      const scrollTo = () => {
+      const scrollToProjects = () => {
         scroll.scrollTo(200);
       }
 
-      console.log('Project Scroll', scrollTo)
+      const scrollToAbout = () => {
+        scroll.scrollTo(250);
+      }
+
+      // console.log('Project Scroll', scrollTo)
 
     return(
         <nav className='nav-wrapper'>
             <ul className='nav-ul'>
+
                 <Link to='/' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToTop}>Home</Link>
-                <Link to='/about' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollTo}>About</Link>
-                <Link to='/projects' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollTo}>Projects</Link>
+                <Link to='/about' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToAbout}>About</Link>
+                <Link to='/projects' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToProjects}>Projects</Link>
                 <Link to='/contact' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToBottom}>Contact</Link>
             {/* <a href='#' className='active'>Home</a>
             <a href='#' className='nav-a'>About</a>
