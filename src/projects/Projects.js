@@ -9,8 +9,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
 import '../styles/Projects.scss'
 
-//create an array of projects and map over them to display projects 
-// const projectArray = ["project1", "project2", "project3", "project4]
 
 
 
@@ -68,19 +66,19 @@ export default function Projects() {
           title="Washington Monument during sunset"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
             TBA Project 1
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography style={{fontFamily:'Shadows Into Light, cursive' }}  variant="body2" color="textSecondary" component="p">
             Description 
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer' style={{borderRadius: '5px'}}>
+        <Button style={{fontFamily:'Shadows Into Light, cursive', borderRadius: '5px', color: '#EBB604'}} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
           Github
         </Button>
-        <Button size="small" color="primary" style={{borderRadius: '5px'}}>
+        <Button style={{fontFamily:'Shadows Into Light, cursive', borderRadius: '5px', color: '#008080'}} size="small" color="primary">
         Website
         </Button>
       </CardActions>
@@ -94,19 +92,19 @@ export default function Projects() {
     title="Washington Monument"
   />
   <CardContent>
-    <Typography gutterBottom variant="h5" component="h2">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
       TBA Project 2
     </Typography>
-    <Typography variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
     Github
   </Button>
-  <Button size="small" color="primary">
+  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#008080' }} size="small" color="primary">
   Website
   </Button>
 </CardActions>
@@ -120,19 +118,19 @@ export default function Projects() {
     title="Cherry Blossoms"
   />
   <CardContent>
-    <Typography gutterBottom variant="h5" component="h2">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
       TBA Project 3
     </Typography>
-    <Typography variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
     Github
   </Button>
-  <Button size="small" color="primary">
+  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#008080' }} size="small" color="primary">
   Website
   </Button>
 </CardActions>
@@ -146,19 +144,19 @@ export default function Projects() {
     title="Japanese Temple and Cherry Blossoms"
   />
   <CardContent>
-    <Typography gutterBottom variant="h5" component="h2">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
       TBA Project 4
     </Typography>
-    <Typography variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button  style={{fontFamily:'Shadows Into Light, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
     Github
   </Button>
-  <Button size="small" color="primary">
+  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#008080' }} size="small" color="primary">
   Website
   </Button>
 </CardActions>

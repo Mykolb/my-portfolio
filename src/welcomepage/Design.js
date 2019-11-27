@@ -54,12 +54,15 @@ return(
 	                "enable": false,
 	            }
 			},
-			// "shape": {
-			// "type": "image",
-			// // "src": ""
-			// }
+			"shape": {
+			"type": "circle",
+			"stroke": {
+				"width": 2,
+				"color": '#B3A190',
+			}
+			},
 			"color": {
-				"value": '#FFFFFF'
+				"value": [ '#E63629', '#EBB604', '#008080' ]
 			},
 	        "size": {
 	            "value": 5,
@@ -76,25 +79,25 @@ return(
 	            "random": true,
 	            "speed": 3,
 	            "direction": "top",
-	            "out_mode": "out"
+	            "out_mode": "bounce"
 	        }
 	    },
 	    "interactivity": {
 	        "events": {
 	            "onhover": {
 	                "enable": true,
-	                "mode": "bubble"
+	                "mode": ["bubble", "push"]
 	            },
 	            "onclick": {
 	                "enable": true,
-	                "mode": "repulse"
+	                "mode": "push"
 	            }
 	        },
 	        "modes": {
 	            "bubble": {
 	                "distance": 250,
 	                "duration": 2,
-	                "size": 0,
+	                "size": 15,
 	                "opacity": 0
 	            },
 	            "repulse": {

@@ -17,11 +17,11 @@ const Nav = () => {
       }
 
       const scrollToBottom = () => {
-        scroll.scrollToBottom();
+        scroll.scrollToBottom(100);
       }
 
       const scrollToProjects = () => {
-        scroll.scrollTo(200);
+        scroll.scrollTo(10);
       }
 
       const scrollToAbout = () => {
@@ -34,10 +34,10 @@ const Nav = () => {
         <nav className='nav-wrapper'>
             <ul className='nav-ul'>
 
-                <Link to='/' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToTop}>Home</Link>
-                <Link to='/about' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToAbout}>About</Link>
-                <Link to='/projects' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToProjects}>Projects</Link>
-                <Link to='/contact' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToBottom}>Contact</Link>
+                <Link to='/' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500}  isDynamic={true}onClick={scrollToTop}>Home</Link>
+                <Link to='about' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} isDynamic={true} onClick={scrollToAbout}>About</Link>
+                <Link to='projects' activeClass='active'  spy={true} smooth={true} offset={-70} duration={500} isDynamic={true} onClick={scrollToProjects}>Projects</Link>
+                <Link to='contact' activeClass='active'  spy={true} smooth={true} offset={-20} duration={500} isDynamic={true} onClick={scrollToBottom}>Contact</Link>
             {/* <a href='#' className='active'>Home</a>
             <a href='#' className='nav-a'>About</a>
             <a href='#' className='nav-a'>Projects</a>

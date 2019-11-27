@@ -86,6 +86,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             margin='normal'
             variant='outlined'
             fullWidth
+            style={{fontFamily:'Shadows Into Light, cursive'}}
             />
             {touched.email && errors.email && <p>{errors.email}</p>}
             <Field
@@ -117,9 +118,10 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fontSize='small'
             onClick={handleClickOpen}
             fullWidth
-            style={{borderRadius: '15px'}}
+            style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive'}}
             >Submit the form</Button>
 
+          {/* //modal that pops up afer form submission */}
         <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
                 Contact Submission
@@ -161,7 +163,7 @@ validationSchema: Yup.object().shape({
     .required(),
     message: Yup.string()
     .required()
-    .max(128, 'Message hass exceeded character limit')
+    .max(250, 'Message hass exceeded character limit')
     }),
 
 
