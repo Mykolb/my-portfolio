@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Profile from './profile.jpg'
@@ -10,7 +10,17 @@ import '../styles/About.scss'
       
       export default function ProfilePic(props) {
 
+      const [state, setState] = useState({
+        width: 500
+      })
       
+	let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
+
+	const soundEffect = () => {
+		audio.play()
+  }
+
+
     return(
       <div>
         <div className='aboutContainer'>

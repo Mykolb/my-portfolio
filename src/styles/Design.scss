@@ -1,11 +1,16 @@
 
 .design-background {
     background: white;
+
+    @media screen and (max-width: 500px) {
+      display: none;
+   }
 }
  
   
   .welcome-div {
     position: relative;
+
   }
   
   .introduction {
@@ -19,11 +24,12 @@
 
 
     @media screen and (max-width: 500px) {
-        border: 1px solid black;
-        top: 20%;
-        text-align:center;
-        height: 150px;
-        font-size: 1.25rem;
+        // border: 1px solid black;
+        // top: 20%;
+        // text-align:center;
+        // height: 150px;
+        // font-size: 1.25rem;
+        display: none;
     }
   }
   

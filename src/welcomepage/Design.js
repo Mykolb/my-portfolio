@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Particles from 'react-particles-js';
 import { withRouter } from 'react-router-dom';
 import '../styles/Design.scss';
-
+import MobileIntro from './MobileIntro';
 
 
 
@@ -35,15 +35,39 @@ import '../styles/Design.scss';
 
 // https://media.merriam-webster.com/soundc11/bix/bixmic01.wav
 const Design = props => {
+	const [state, setState] = useState({
+		width: window.innerWidth
+	})
 
-	let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
+let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
 
-	const soundEffect = () => {
-		audio.play()
+const soundEffect = () => {
+	audio.play()
+}
+
+
+  useEffect(() => {
+
+	window.addEventListener('resize', handleSize);
+  
+	// returned function will be called on component unmount 
+	return () => {
+	  window.removeEventListener('resize', handleSize)
 	}
+  }, [])
+
+const handleSize = () => {
+	setState({width: window.innerWidth})
+	console.log('HANDLESTATE', handleSize)
+}
+
+const isMobileView = state.width <= 800
+
 
 return(
-    <div className='welcome-div'>
+	<>
+	{!isMobileView ? (
+    <div classNme='welcome-div'> 
        <Particles
 	className='design-background'
     params={{
@@ -112,13 +136,16 @@ return(
 
 	<div className='introduction'>
 		<h2 className='intro-header'> mykol <em>(noun)</em></h2>
-		{/* <p className='intro-header'>mi-chael</p> */}
-<p className='intro-header'>definition: web developer{' '}</p>
-<i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
+		<i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
+		<p className='intro-header'>definition: web developer{' '}</p>
 	</div>
-
+	
     </div>
+	) :  (  <MobileIntro />
 
+		
+		)}
+		</>
 //font awesome has rotating option for svg icons, need to install fontawesome as dependency to use it for my button arrow
 )}
 
