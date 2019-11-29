@@ -11,7 +11,7 @@ import MobileAbout from './MobileAbout'
       export default function ProfilePic(props) {
 
       const [state, setState] = useState({
-        width: 500
+        width: window.innerWidth
       })
       
 	let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')

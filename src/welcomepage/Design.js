@@ -99,7 +99,7 @@ return(
 	    }
 	}} />
 
-	<div className='introduction'>
+	<div className='introduction' style={{ margin:' 0 auto'}}>
 		<h2 className='intro-header'> mykol <em>(noun)</em></h2>
 		<i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
 		<p className='intro-header'>definition: web developer{' '}</p>
