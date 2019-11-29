@@ -30,8 +30,6 @@ const handleSize = () => {
 	console.log('HANDLESTATE', handleSize)
 }
 
-const isMobileView = state.width <= 800
-
 
 return(
 	<>
@@ -100,7 +98,6 @@ return(
 	        }
 	    }
 	}} />
-
 
 	<div className='introduction'>
 		<h2 className='intro-header'> mykol <em>(noun)</em></h2>

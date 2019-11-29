@@ -52,13 +52,13 @@ import MobileAbout from './MobileAbout'
         className='bigAvatar' 
         />
       </Grid>
-      <div className='bioContainer'>
+      {/* <div className='bioContainer'> */}
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
         <p className='bio'>
           Welcome to my page! I'm Mykol, a Full Stack Developer. I've spent the last year studying Web Development and Computer Science at Lambda School. I've also had the amazing opportunity to intern as a Team Lead. Please check out my projects and don't hesitate to contact me if you have any questions. Thanks for visiting! 
        </p>
        </Grid>
-      </div>
+      {/* </div> */}
         </div>
         </div>
         ) :  (  <MobileAbout />
