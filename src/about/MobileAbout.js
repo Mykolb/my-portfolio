@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Profile from './profile.jpg'
 import '../styles/About.scss'
-import MobileAbout from './MobileAbout'
+
 
 
  
       
-      export default function ProfilePic(props) {
+      export default function MobileAbout(props) {
 
       const [state, setState] = useState({
         width: 500
@@ -20,37 +20,20 @@ import MobileAbout from './MobileAbout'
 		audio.play()
   }
 
-  useEffect(() => {
-
-    window.addEventListener('resize', handleSize);
-    
-    // returned function will be called on component unmount 
-    return () => {
-      window.removeEventListener('resize', handleSize)
-    }
-    }, [])
-  
-  const handleSize = () => {
-    setState({width: window.innerWidth})
-    console.log('HANDLESTATE', handleSize)
-  }
-  
-  const isMobileView = state.width <= 800
 
     return(
-      <>      
-{!isMobileView ? (
       <div>
         <div className='aboutContainer'>
-        <h2 className='aboutHeading' style={{ textAlign: 'center', fontFamily: 'Shadows Into Light, cursive', color: '#B3A190', fontSize: '2rem'}}>WHO AM I?</h2>
+        <h2 className='mobile-aboutHeading' style={{ textAlign: 'center', fontFamily: 'Shadows Into Light, cursive', color: '#B3A190', fontSize: '2rem', marginTop: '15%' }}>WHO AM I?</h2>
+        <i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
         </div>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
-        <Avatar 
+        {/* <Avatar 
         alt="profile picture" 
         src={Profile} 
         className='bigAvatar' 
-        />
+        /> */}
       </Grid>
       <div className='bioContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
@@ -61,11 +44,5 @@ import MobileAbout from './MobileAbout'
       </div>
         </div>
         </div>
-        ) :  (  <MobileAbout />
-        )}
-        </>
     )
 }
-
-
-

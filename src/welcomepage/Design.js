@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Particles from 'react-particles-js';
 import { withRouter } from 'react-router-dom';
 import '../styles/Design.scss';
-import MobileIntro from './MobileIntro';
 
 
 
@@ -66,7 +65,6 @@ const isMobileView = state.width <= 800
 
 return(
 	<>
-	{!isMobileView ? (
     <div classNme='welcome-div'> 
        <Particles
 	className='design-background'
@@ -141,10 +139,6 @@ return(
 	</div>
 	
     </div>
-	) :  (  <MobileIntro />
-
-		
-		)}
 		</>
 //font awesome has rotating option for svg icons, need to install fontawesome as dependency to use it for my button arrow
 )}

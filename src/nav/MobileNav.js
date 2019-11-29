@@ -4,7 +4,6 @@ import { Link, scrollTo, animateScroll as scroll } from "react-scroll";
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
-
 // import MenuTwoToneIcon from '@material-ui/icons/MenuTwoTone';
 
 export default function MobileNav() {
@@ -35,8 +34,8 @@ export default function MobileNav() {
         scroll.scrollTo();
       }
     return (
-        <div>
-          <MenuTwoToneIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+        <div className='nav-wrapper'>
+          <MenuTwoToneIcon style={{ height: '50px', width: '10%'}} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
             Open Menu
           </MenuTwoToneIcon>
           <Menu
@@ -53,7 +52,7 @@ export default function MobileNav() {
             spy={true} 
             smooth={true} 
             offset={-70} 
-            duration={500}  
+            duration={500} 
             isDynamic={true}><MenuItem onClick={scrollToTop}>Home</MenuItem></Link>
             <Link
             to='about'
