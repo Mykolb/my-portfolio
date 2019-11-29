@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
-import Profile from './profile.jpg'
+// import Profile from './profile.jpg'
 import '../styles/About.scss'
 
 
@@ -29,11 +29,6 @@ import '../styles/About.scss'
         </div>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
-        {/* <Avatar 
-        alt="profile picture" 
-        src={Profile} 
-        className='bigAvatar' 
-        /> */}
       </Grid>
       <div className='bioContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
