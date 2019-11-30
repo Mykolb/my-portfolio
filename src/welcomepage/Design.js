@@ -3,33 +3,14 @@ import Particles from 'react-particles-js';
 import { withRouter } from 'react-router-dom';
 import '../styles/Design.scss';
 
-const Design = props => {
-	const [state, setState] = useState({
-		width: window.innerWidth
-	})
+const Design = () => {
+
 
 let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
 
 const soundEffect = () => {
 	audio.play()
 }
-
-
-  useEffect(() => {
-
-	window.addEventListener('resize', handleSize);
-  
-	// returned function will be called on component unmount 
-	return () => {
-	  window.removeEventListener('resize', handleSize)
-	}
-  }, [])
-
-const handleSize = () => {
-	setState({width: window.innerWidth})
-	console.log('HANDLESTATE', handleSize)
-}
-
 
 return(
 	<>
@@ -99,7 +80,7 @@ return(
 	    }
 	}} />
 
-	<div className='introduction' style={{ margin:' 0 auto'}}>
+	<div className='introduction'>
 		<h2 className='intro-header'> mykol <em>(noun)</em></h2>
 		<i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
 		<p className='intro-header'>definition: web developer{' '}</p>
