@@ -21,7 +21,13 @@ import '../styles/About.scss'
     return(
       <div>
         <div className='aboutContainer'>
-        <h2 className='mobile-aboutHeading' style={{ textAlign: 'center', fontFamily: 'Shadows Into Light, cursive', color: '#B3A190', fontSize: '2rem', marginTop: '15%' }}>WHO AM I?</h2>
+        <h2 className='mobile-aboutHeading' 
+        style={{ 
+          textAlign: 'center', 
+          fontFamily: 'Shadows Into Light, cursive', 
+          color: '#B3A190', 
+          fontSize: '2rem', 
+          marginTop: '15%'}}>WHO AM I?</h2>
         <i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
         </div>
         <div className='entireContainer'>

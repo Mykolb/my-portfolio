@@ -4,11 +4,13 @@
     // grid-gap: 30px;
     justify-items: center;
     margin: 5% 4% 0% 4%;
+    border-top: 5px dotted #EBB604;
 
     @media screen and (max-width:500px) {
             display: flex;
-            border: 3px solid orange;
-            margin: 0 auto;   
+            // border: 3px solid orange;
+            margin: 0 auto; 
+            margin: 3.5%;  
 
     }
    
@@ -16,7 +18,7 @@
 .aboutContainer {
     margin: 0 auto;
     justify-content: center;
-    border: 5px solid gold;
+    // border: 5px solid gold;
     width: 100%;
     
   }
@@ -26,7 +28,7 @@
     font-family: 'Shadows Into Light', cursive;
     color: #B3A190;
     font-size: 2rem;
-
+    
   //   @media screen and (max-width: 500px) {
   //    margin-top: 15%
   //  }
@@ -37,10 +39,12 @@
 
   .mobile-aboutHeading {
     @media screen and (max-width: 500px) {
-      margin-top: 15%
+      margin-top: 15%;
+      border-bottom: 5px dotted #EBB604;
     }
     @media screen and (max-width: 800px) {
-     margin-top: 15%
+     margin-top: 15%;
+     border-bottom: 5px dotted #EBB604;
    }
   }
 
@@ -92,7 +96,8 @@
 
     @media screen and (max-width:500px) {
       text-align: center;
-      padding: 2%;
+      // padding-top: 15%;
+      padding-top: 15% !important;
       width: 500px;
       margin: 0 auto;
      

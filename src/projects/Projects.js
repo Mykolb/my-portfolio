@@ -16,13 +16,16 @@ const useStyles = makeStyles({
   container: {
     display: 'flex',
     flexWrap: 'wrap',
+    borderBottom: '5px dotted #EBB604',
+    margin: '3.5%',
   },
   headingContainer: {
     margin: '0 auto',
     justifyContent: 'center',
-    border: '5px solid brown',
+    // border: '5px solid brown',
+    borderBottom: '5px dotted #EBB604',
     width: '100%',
-    margin: '5%'
+    margin: '3.5%',
   },
   heading: {
     textAlign: 'center',
@@ -41,7 +44,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     // border: '7px solid black',
     borderRadius: '15px',
-  
+    marginBottom: '2.5%',
   },
   media: {
     height: 200,

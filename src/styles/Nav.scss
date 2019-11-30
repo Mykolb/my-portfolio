@@ -1,5 +1,5 @@
 .nav-wrapper {
-    border: 3px solid green;
+    // border: 3px solid green;
     width: 100%;
     height: 50px;
     display: flex;
@@ -8,6 +8,7 @@
     background:#FFFFFF;
     overflow:hidden;
     z-index: 1;
+    // border-bottom: 5px dotted #EBB604;
    
     @media screen and (max-width: 500px) {
         top: 0;
@@ -28,6 +29,7 @@ zindex fixed overlapping nav */
     position: sticky;
     text-transform: uppercase;
     font-family: 'Shadows Into Light', cursive;
+    padding: .5%;
 
     @media screen and (max-width: 500px) {
         // border: 1px solid #B3A190;
