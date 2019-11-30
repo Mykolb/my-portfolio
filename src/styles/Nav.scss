@@ -15,8 +15,14 @@
         position: fixed;
     }
     @media screen and (max-width: 800px) {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        position: sticky;
         top: 0;
-        position: fixed;
+        background:#FFFFFF;
+        overflow:hidden;
+        z-index: 1;
       }
 }
 /* 
@@ -36,6 +42,16 @@ zindex fixed overlapping nav */
         align-items: center;
         font-family: 'Shadows Into Light', cursive;
     }
+    @media screen and (max-width: 800px) {
+        margin: 0% 3% 0% 3%;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #B3A190;
+        position: sticky;
+        text-transform: uppercase;
+        font-family: 'Shadows Into Light', cursive;
+        padding: .5%;
+      }
 }
 
 .nav-wrapper a:hover,

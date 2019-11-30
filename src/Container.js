@@ -1,7 +1,7 @@
 import React from 'react'
-import Design from './welcomepage/Design'
+import Home from './home/Home'
 import Nav from './nav/Nav';
-import ProfilePic from './about/ProfilePic';
+import About from './about/About';
 import Projects from './projects/Projects';
 import ContactPage from './contact/ContactPage';
 import Footer from './footer/Footer';
@@ -11,9 +11,9 @@ import Footer from './footer/Footer';
 export const Container = () => {
     return(
         <div>
-        <Design />
+        <Home />
         <Nav />
-        <ProfilePic />
+        <About />
         <Projects />
         <ContactPage />
         <Footer />

@@ -20,8 +20,9 @@ import '../styles/About.scss'
 
     return(
       <div>
-        <div className='aboutContainer'>
+        <div className='aboutContainer' >
         <h2 className='mobile-aboutHeading' 
+        id='about-section'
         style={{ 
           textAlign: 'center', 
           fontFamily: 'Shadows Into Light, cursive', 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import * as Scroll from 'react-scroll';
-import { Link, scrollTo, animateScroll as scroll } from "react-scroll";
+import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
 import '../styles/Nav.scss';
 import MobileNav from './MobileNav';
 
@@ -13,6 +13,7 @@ const Nav = () => {
   })
   
 
+  //add/remove event listener for screen width 
   useEffect(() => {
 
     window.addEventListener('resize', handleSize);
@@ -30,21 +31,44 @@ const Nav = () => {
     
     const isMobileView = navState.width <= 800
     
+
+
+//scrolling events
+useEffect(() => {
+  Events.scrollEvent.register('begin', function() {
+    console.log('begin', arguments)
+  })
+
+  Events.scrollEvent.register('end', function() {
+    console.log('end', arguments);
+  });
+
+    return() => {
+      Events.scrollEvent.remove('begin')
+      Events.scrollEvent.remove('end')
+    }
+}, [])
+
+
+
       const scrollToTop = () => {
-        scroll.scrollToTop();
+        scroller.scrollTo()
+
       }
 
-      const scrollToBottom = () => {
-        scroll.scrollToBottom();
+      const scrollToContact = () => {
+        scroller.scrollTo();
       }
 
       const scrollToProjects = () => {
-        scroll.scrollTo();
+        scroller.scrollTo();
+        
       }
 
       const scrollToAbout = () => {
-        scroll.scrollTo();
+        scroller.scrollTo();
       }
+
 
       // console.log('Project Scroll', scrollTo)
 
@@ -53,41 +77,45 @@ const Nav = () => {
       	{!isMobileView ? (
         <nav className='nav-wrapper'>
                 <Link 
-                to='/' 
+                to='home-section' 
+                activeClass='active'  //class applied when element is reached 
+                spy={true} //make link selected when scroll is at target position
+                smooth={true} //animate the scrolling
+                offset={-80} //additional scrolling px 
+                duration={700}  //time of scroll animation 
+                isDynamic={true} //for content that expands, needs recaulated
+                name='home'
+                onClick={() => scrollToTop()}>Home</Link>
+                <Link 
+                to='about-section' 
                 activeClass='active'  
                 spy={true} 
                 smooth={true} 
                 offset={-70} 
-                duration={500}  
-                isDynamic={true}
-                onClick={scrollToTop}>Home</Link>
+                duration={700} 
+                isDynamic={true} 
+                name='about'
+                onClick={() => scrollToAbout()}>About</Link>
                 <Link 
-                to='about' 
+                to='project-section' 
                 activeClass='active'  
                 spy={true} 
                 smooth={true} 
                 offset={-70} 
-                duration={500} 
+                duration={700} 
                 isDynamic={true} 
-                onClick={scrollToAbout}>About</Link>
+                name='projects'
+                onClick={() => scrollToProjects()}>Projects</Link>
                 <Link 
-                to='projects' 
+                to='contacts-section' 
                 activeClass='active'  
                 spy={true} 
                 smooth={true} 
-                offset={-70} 
-                duration={500} 
+                // offset={500} 
+                duration={700} 
                 isDynamic={true} 
-                onClick={scrollToProjects}>Projects</Link>
-                <Link 
-                to='contact' 
-                activeClass='active'  
-                spy={true} 
-                smooth={true} 
-                offset={-20} 
-                duration={500} 
-                isDynamic={true} 
-                onClick={scrollToBottom}>Contact</Link>
+                name='contacts'
+                onClick={() => scrollToContact()}>Contact</Link>
         </nav>
         ) :  (  <MobileNav />
         )}

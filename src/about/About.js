@@ -8,7 +8,7 @@ import MobileAbout from './MobileAbout'
 
  
       
-      export default function ProfilePic(props) {
+      export default function About(props) {
 
       const [state, setState] = useState({
         width: window.innerWidth
@@ -42,7 +42,13 @@ import MobileAbout from './MobileAbout'
 {!isMobileView ? (
       <div>
         <div className='aboutContainer'>
-        <h2 className='aboutHeading' style={{ textAlign: 'center', fontFamily: 'Shadows Into Light, cursive', color: '#B3A190', fontSize: '2rem'}}>WHO AM I?</h2>
+        <h2 className='aboutHeading' 
+        id='about-section'
+        style={{ 
+          textAlign: 'center', 
+          fontFamily: 'Shadows Into Light, cursive', 
+          color: '#B3A190', 
+          fontSize: '2rem'}}>WHO AM I?</h2>
         </div>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>

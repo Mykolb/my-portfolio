@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as Scroll from 'react-scroll';
-import { Link, scrollTo, animateScroll as scroll } from "react-scroll";
+import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
-// import MenuTwoToneIcon from '@material-ui/icons/MenuTwoTone';
+
 
 export default function MobileNav() {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -17,25 +17,42 @@ export default function MobileNav() {
       setAnchorEl(null);
     };
 
-//scrolling 
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-      }
 
-      const scrollToBottom = () => {
-        scroll.scrollToBottom();
+//scrolling events
+useEffect(() => {
+  Events.scrollEvent.register('begin', function() {
+    console.log('begin', arguments)
+  })
+
+  Events.scrollEvent.register('end', function() {
+    console.log('end', arguments);
+  });
+
+    return() => {
+      Events.scrollEvent.remove('begin')
+      Events.scrollEvent.remove('end')
+    }
+}, [])
+
+
+
+//scrolling 
+
+      const scrollToContact = () => {
+        scroller.scrollTo();
       }
 
       const scrollToProjects = () => {
-        scroll.scrollTo();
+        scroller.scrollTo();
       }
 
       const scrollToAbout = () => {
-        scroll.scrollTo();
+        scroller.scrollTo();
       }
+
     return (
         <div className='nav-wrapper'>
-          <MenuTwoToneIcon style={{ height: '50px', width: '10%'}} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+          <MenuTwoToneIcon style={{ height: '50px', width: '10%'}}  aria-haspopup="true" onClick={handleClick}>
             Open Menu
           </MenuTwoToneIcon>
           <Menu
@@ -45,39 +62,36 @@ export default function MobileNav() {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <Link 
-            to='/'
-            to='contact'
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-70} 
-            duration={500} 
-            isDynamic={true}><MenuItem onClick={scrollToTop}>Home</MenuItem></Link>
             <Link
-            to='about'
+            to='about-section' 
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            offset={-70} 
+            // offset={-70} 
             duration={500}  
-            isDynamic={true}><MenuItem onClick={scrollToAbout}>About</MenuItem></Link>
+            isDynamic={true}
+            name='about'
+            onClick={() => scrollToAbout()}>About</Link>
             <Link
-            to='projects'
+            to='project-section' 
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            offset={-70} 
+            // offset={-70} 
             duration={500}  
-            isDynamic={true}><MenuItem onClick={scrollToProjects}>Projects</MenuItem></Link>
+            isDynamic={true}
+            name='projects'
+            onClick={() => scrollToProjects()}><MenuItem>Projects</MenuItem></Link>
             <Link 
-            to='contact'
+            to='contacts-section'
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            offset={-70} 
+            // offset={-70} 
             duration={500}  
-            isDynamic={true}><MenuItem onClick={scrollToBottom}>Contact</MenuItem></Link>
+            isDynamic={true}
+            name='contacts'
+            onClick={() => scrollToContact()}><MenuItem>Contact</MenuItem></Link>
           </Menu>
         </div>
       );

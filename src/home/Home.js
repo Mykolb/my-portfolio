@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Particles from 'react-particles-js';
 import { withRouter } from 'react-router-dom';
-import '../styles/Design.scss';
+import '../styles/Home.scss';
 
-const Design = () => {
+const Home = () => {
 
 
 let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
@@ -14,7 +14,7 @@ const soundEffect = () => {
 
 return(
 	<>
-    <div classNme='welcome-div'> 
+    <div id='home-section' className='welcome-div' > 
        <Particles
 	className='design-background'
     params={{
@@ -92,6 +92,6 @@ return(
 )}
 
 
-const designWithRouter = withRouter(Design)
+const homeWithRouter = withRouter(Home)
 
-    export default designWithRouter;
+    export default homeWithRouter;

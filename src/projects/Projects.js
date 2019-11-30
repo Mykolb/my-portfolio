@@ -59,7 +59,7 @@ export default function Projects() {
   return (
       <div className={classes.container}>
         <div className={classes.headingContainer}>
-          <h2 className={classes.heading}>PROJECTS</h2>
+          <h2 className={classes.heading} id='project-section'>PROJECTS</h2>
           </div>
     <Card className={classes.card}>
       <CardActionArea>
