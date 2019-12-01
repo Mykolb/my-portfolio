@@ -5,7 +5,7 @@ import '../styles/Home.scss';
 
 const Home = () => {
 
-
+//created variable for sound clip 
 let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
 
 const soundEffect = () => {

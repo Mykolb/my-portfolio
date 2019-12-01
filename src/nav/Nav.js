@@ -50,7 +50,7 @@ useEffect(() => {
 }, [])
 
 
-
+      //if you use scroll.scrollSomewhere() target element cannot be found
       const scrollToTop = () => {
         scroller.scrollTo()
 

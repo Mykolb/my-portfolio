@@ -9,8 +9,8 @@ import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
 export default function MobileNav() {
     const [anchorEl, setAnchorEl] = useState(null);
   
-    const handleClick = event => {
-      setAnchorEl(event.currentTarget);
+    const handleClick = e => {
+      setAnchorEl(e.currentTarget);
     };
   
     const handleClose = () => {
@@ -50,9 +50,10 @@ useEffect(() => {
         scroller.scrollTo();
       }
 
+     
     return (
         <div className='nav-wrapper'>
-          <MenuTwoToneIcon style={{ height: '50px', width: '10%'}}  aria-haspopup="true" onClick={handleClick}>
+          <MenuTwoToneIcon style={{ height: '50px', width: '5%' }}   onClick={handleClick}>
             Open Menu
           </MenuTwoToneIcon>
           <Menu
@@ -61,13 +62,13 @@ useEffect(() => {
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}
-          >
+            >
             <Link
             to='about-section' 
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            // offset={-70} 
+            offset={-70} 
             duration={500}  
             isDynamic={true}
             name='about'
@@ -77,21 +78,20 @@ useEffect(() => {
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            // offset={-70} 
+            offset={-70} 
             duration={500}  
             isDynamic={true}
             name='projects'
-            onClick={() => scrollToProjects()}><MenuItem>Projects</MenuItem></Link>
+            onClick={() => scrollToProjects()}>Projects</Link>
             <Link 
             to='contacts-section'
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            // offset={-70} 
             duration={500}  
             isDynamic={true}
             name='contacts'
-            onClick={() => scrollToContact()}><MenuItem>Contact</MenuItem></Link>
+            onClick={() => scrollToContact()}>Contact</Link>
           </Menu>
         </div>
       );
