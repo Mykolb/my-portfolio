@@ -29,3 +29,6 @@ https://media.merriam-webster.com/soundc11/bix/bixmic01.wav
 - yarrow #EBB604 
 - fawn #B3A190 
 - teal #008080 
+
+# Deploy Zeit Reminder! 
+- needed -ouput public on build script to deploy successfully to direct its static output files into the public directory instead
