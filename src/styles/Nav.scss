@@ -1,0 +1,117 @@
+.nav-wrapper {
+    // border: 3px solid green;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background:#FFFFFF;
+    overflow:hidden;
+    z-index: 1;
+    // border-bottom: 5px dotted #EBB604;
+   
+    @media screen and (max-width: 500px) {
+        top: 0;
+        position: fixed;
+    }
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        position: sticky;
+        top: 0;
+        background:#FFFFFF;
+        overflow:hidden;
+        z-index: 1;
+      }
+}
+/* 
+zindex fixed overlapping nav */
+.nav-wrapper a {
+    margin: 0% 3% 0% 3%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #B3A190;
+    position: sticky;
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+    padding: .5%;
+
+    @media screen and (max-width: 500px) {
+        // border: 1px solid #B3A190;
+        align-items: center; 
+        
+    }
+    @media screen and (max-width: 800px) {
+        margin: 0% 3% 0% 3%;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #B3A190;
+        position: sticky;
+        text-transform: uppercase;
+        font-family: 'Shadows Into Light', cursive;
+        padding: .5%;
+      }
+}
+
+.nav-wrapper a:hover,
+.nav-wrapper a.active {
+    color: #E63629;
+
+}
+
+.MuiList-root {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 150px;
+    margin: 0;
+    padding: 5%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+.MuiList-root a:hover {
+    color: #E63629;
+}
+.MuiList-root a:active {
+    text-decoration-color: #E63629; 
+}
+
+// nav ul {
+
+//     @media screen and (max-width: 500px) {
+//         display: none;
+
+//     }
+// }
+
+
+
+
+// nav ul a {
+//     margin: 0% 3% 0% 3%;
+//     font-size: 1.5rem;
+//     text-decoration: none;
+//     color: #B3A190;
+//     position: sticky;
+//     text-transform: uppercase;
+//     font-family: 'Shadows Into Light', cursive;
+
+//     @media screen and (max-width: 500px) {
+//         flex-direction: column;
+//         margin: 0% 3% 0% 3%;
+//         font-size: 1rem;
+//         position: relative;
+//         flex-wrap: wrap;
+//     }
+
+// }
+
+// nav ul a:hover,
+// nav ul a.active {
+//     color: #E63629;
+// }

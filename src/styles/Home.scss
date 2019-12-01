@@ -1,0 +1,81 @@
+
+.design-background {
+    background: white;
+
+    @media screen and (max-width: 500px) {
+      display: none;
+   }
+   @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+ 
+  
+  .welcome-div {
+    position: relative;
+
+  }
+  
+  .introduction {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    // border: 3px solid orange;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+  
+
+
+  .intro-header {
+    font-size: 2.5rem;
+    color: #B3A190;
+    font-family: 'Shadows Into Light Two', cursive;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+  
+
+    @media screen and (max-width: 500px) {
+      font-family: 'Shadows Into Light Two', cursive;
+      font-size: 1.3rem;
+
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.75rem;
+   }
+  }
+
+  #volume-icon {
+    color: #B3A190;
+    margin-top: 1%;
+
+    @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+   }
+   @media screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+   }
+
+  }
+
+  #volume-icon:hover {
+    color:#008080 ;
+  }
+

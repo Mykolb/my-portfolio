@@ -1,0 +1,69 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    // border: 2px solid gray;
+    margin: 3.5%;
+}
+
+
+.contact-header {
+    // border: 5px solid teal;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: #B3A190;
+    font-size: 2rem;
+}
+
+.contact-subheader {
+    // border: 5px solid teal;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width: 55%; 
+    opacity: 0.9;
+    transition: 0.3s;
+    border-radius: 15px;
+    padding: 2.5%;
+    border: 2px solid #B3A190;
+    // box-shadow: 30px 30px 30px 30px lightgray; 
+   
+
+
+    @media screen and (max-width:800px) {
+        // margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+        width: 80%; 
+        opacity: 0.9;
+        transition: 0.3s;
+        border-radius: 10px;
+        padding: 2.5%;
+        // border: 2px solid red;
+
+    }
+        @media screen and (max-width: 500px) {
+            // margin: 0 auto;
+            // margin-top: 5%;
+            // margin-bottom: 5%;
+            flex-wrap: wrap;
+            width: 80%; 
+            opacity: 0.9;
+            transition: 0.3s;
+            border-radius: 10px;
+            padding: 2.5%;
+            // border: 2px solid purple;
+         }
+       }
+
+    
+
+
+
