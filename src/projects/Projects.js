@@ -69,10 +69,10 @@ export default function Projects() {
           title="Washington Monument during sunset"
         />
         <CardContent>
-          <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
+          <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
             TBA Project 1
           </Typography>
-          <Typography style={{fontFamily:'Shadows Into Light, cursive' }}  variant="body2" color="textSecondary" component="p">
+          <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }}  variant="body2" color="textSecondary" component="p">
             Description 
           </Typography>
         </CardContent>
@@ -95,10 +95,10 @@ export default function Projects() {
     title="Washington Monument"
   />
   <CardContent>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
       TBA Project 2
     </Typography>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
@@ -121,10 +121,10 @@ export default function Projects() {
     title="Cherry Blossoms"
   />
   <CardContent>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
       TBA Project 3
     </Typography>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
@@ -147,10 +147,10 @@ export default function Projects() {
     title="Japanese Temple and Cherry Blossoms"
   />
   <CardContent>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} component="h2">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
       TBA Project 4
     </Typography>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive' }} variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
