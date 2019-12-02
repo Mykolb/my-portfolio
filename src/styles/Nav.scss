@@ -13,6 +13,7 @@
     @media screen and (max-width: 500px) {
         top: 0;
         position: fixed;
+        justify-content: flex-end;
     }
     @media screen and (max-width: 800px) {
         width: 100%;
@@ -23,6 +24,7 @@
         background:#FFFFFF;
         overflow:hidden;
         z-index: 1;
+        justify-content: flex-end;
       }
 }
 /* 
