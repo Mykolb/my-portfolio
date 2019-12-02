@@ -123,17 +123,17 @@ const ContactPage = ({ errors, touched, values, status }) => {
             >Submit the form</Button>
 
           {/* //modal that pops up afer form submission */}
-        <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+        <Dialog onClose={handleClose}  open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
                 Contact Submission
             </DialogTitle>
-            <DialogContent dividers>
-                <Typography gutterBottom>
+            <DialogContent dividers style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }}>
+                {/* <Typography gutterBottom> */}
                 Your form was submitted. Thank you.
-             </Typography>
+             {/* </Typography> */}
             </DialogContent>
             <DialogActions>
-             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px'}}>
+             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive', color: '#008080'}}>
                 Return to website
             </Button>
              </DialogActions>

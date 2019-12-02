@@ -13,6 +13,7 @@
     @media screen and (max-width: 500px) {
         top: 0;
         position: fixed;
+        justify-content: flex-end;
     }
     @media screen and (max-width: 800px) {
         width: 100%;
@@ -23,6 +24,7 @@
         background:#FFFFFF;
         overflow:hidden;
         z-index: 1;
+        justify-content: flex-end;
       }
 }
 /* 
@@ -82,37 +84,4 @@ zindex fixed overlapping nav */
     text-decoration-color: #E63629; 
 }
 
-// nav ul {
 
-//     @media screen and (max-width: 500px) {
-//         display: none;
-
-//     }
-// }
-
-
-
-
-// nav ul a {
-//     margin: 0% 3% 0% 3%;
-//     font-size: 1.5rem;
-//     text-decoration: none;
-//     color: #B3A190;
-//     position: sticky;
-//     text-transform: uppercase;
-//     font-family: 'Shadows Into Light', cursive;
-
-//     @media screen and (max-width: 500px) {
-//         flex-direction: column;
-//         margin: 0% 3% 0% 3%;
-//         font-size: 1rem;
-//         position: relative;
-//         flex-wrap: wrap;
-//     }
-
-// }
-
-// nav ul a:hover,
-// nav ul a.active {
-//     color: #E63629;
-// }
