@@ -50,10 +50,10 @@ useEffect(() => {
         scroller.scrollTo();
       }
 
-     
+     //changed width from 5% to auto
     return (
-        <div className='nav-wrapper'>
-          <MenuTwoToneIcon style={{ height: '50px', width: '5%' }}   onClick={handleClick}>
+        <div className='nav-wrapper'> 
+          <MenuTwoToneIcon style={{ height: '50px', width: 'auto' }}   onClick={handleClick}>
             Open Menu
           </MenuTwoToneIcon>
           <Menu
