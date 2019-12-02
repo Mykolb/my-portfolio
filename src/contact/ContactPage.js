@@ -114,12 +114,13 @@ const ContactPage = ({ errors, touched, values, status }) => {
                fullWidth
             />
             <Button
+            className='contact-form-button'
             type='submit'
             margin='normal'
             fontSize='small'
             onClick={handleClickOpen}
             fullWidth
-            style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive'}}
+            style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive', color: '#B3A190'}}
             >Submit the form</Button>
 
           {/* //modal that pops up afer form submission */}
