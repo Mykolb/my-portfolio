@@ -18,6 +18,7 @@ const useStyles = makeStyles({
     flexWrap: 'wrap',
     borderBottom: '5px dotted #EBB604',
     margin: '3.5%',
+    paddingBottom: '3.5%',
   },
   headingContainer: {
     margin: '0 auto',
