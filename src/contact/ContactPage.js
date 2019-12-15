@@ -103,7 +103,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             {touched.message && errors.message && <p>{errors.message}</p>}
             <Field
                className='message'
-               type='messaage'
+               type='message'
                name='message'
                label='Enter your message here'
                component={TextField}
