@@ -72,10 +72,10 @@ const ContactPage = ({ errors, touched, values, status }) => {
 
     return(
     
-        <div className='contact-container'>
+        <div name='contact' className='contact-container'>
 
             <Form className='form'>
-            <h2 id='contacts-section' name='contact' className='contact-header'>CONTACT</h2>
+            <h2 id='contacts-section' className='contact-header'>CONTACT</h2>
             <h3 className='contact-subheader'>Interested? Send me a message!</h3>
             {touched.name && errors.name && <p>{errors.name}</p> }
             <Field
