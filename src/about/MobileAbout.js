@@ -3,19 +3,12 @@ import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Profile from './profile.jpg'
 import '../styles/About.scss'
-
+import NameAudio from '../name audio/NameAudio';
 
 
  
       
       export default function MobileAbout(props) {
-
-      
-	let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
-
-	const soundEffect = () => {
-		audio.play()
-  }
 
 
     return(
@@ -29,7 +22,7 @@ import '../styles/About.scss'
           color: '#B3A190', 
           fontSize: '2rem', 
           marginTop: '15%'}}>WHO AM I?</h2>
-        <i className="fas fa-volume-up fa-2x" id='volume-icon' onClick={soundEffect}></i>
+        <NameAudio />
         </div>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>

@@ -5,8 +5,8 @@ const ParticleAnimation = () => {
     return(
         <>
         <Particles
-	className='design-background'
-    params={{
+		className='design-background'
+    	params={{
 	    "particles": {
 	        "number": {
 	            "value": 160,
@@ -68,13 +68,6 @@ const ParticleAnimation = () => {
 	        }
 	    }
 	}} />
-
-
-
-
-
-
-
         </>
     )
 }
