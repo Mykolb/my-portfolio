@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   },
   heading: {
     textAlign: 'center',
-    fontFamily: 'Shadows Into Light, cursive',
+    fontFamily: 'Love Ya Like A Sister, cursive',
     color: '#B3A190',
     fontSize: '2rem',
   },
@@ -70,19 +70,19 @@ export default function Projects() {
           title="Washington Monument during sunset"
         />
         <CardContent>
-          <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
+          <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
             TBA Project 1
           </Typography>
-          <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }}  variant="body2" color="textSecondary" component="p">
+          <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}  variant="body2" color="textSecondary" component="p">
             Description 
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button style={{fontFamily:'Shadows Into Light, cursive', borderRadius: '5px', color: '#EBB604'}} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+        <Button style={{fontFamily:'Love Ya Like A Sister, cursive', borderRadius: '5px', color: '#EBB604'}} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
           Github
         </Button>
-        <Button style={{fontFamily:'Shadows Into Light, cursive', borderRadius: '5px', color: '#008080'}} size="small" color="primary">
+        <Button style={{fontFamily:'Love Ya Like A Sister, cursive', borderRadius: '5px', color: '#008080'}} size="small" color="primary">
         Website
         </Button>
       </CardActions>
@@ -96,19 +96,19 @@ export default function Projects() {
     title="Washington Monument"
   />
   <CardContent>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
+    <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       TBA Project 2
     </Typography>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
     Github
   </Button>
-  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#008080' }} size="small" color="primary">
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
   Website
   </Button>
 </CardActions>
@@ -122,19 +122,19 @@ export default function Projects() {
     title="Cherry Blossoms"
   />
   <CardContent>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
+    <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       TBA Project 3
     </Typography>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
     Github
   </Button>
-  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#008080' }} size="small" color="primary">
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
   Website
   </Button>
 </CardActions>
@@ -148,19 +148,19 @@ export default function Projects() {
     title="Japanese Temple and Cherry Blossoms"
   />
   <CardContent>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} component="h2">
+    <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       TBA Project 4
     </Typography>
-    <Typography style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
+    <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
       Description
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions>
-  <Button  style={{fontFamily:'Shadows Into Light, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button  style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
     Github
   </Button>
-  <Button style={{fontFamily:'Shadows Into Light, cursive', color: '#008080' }} size="small" color="primary">
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
   Website
   </Button>
 </CardActions>

@@ -46,7 +46,7 @@ import MobileAbout from './MobileAbout'
         id='about-section'
         style={{ 
           textAlign: 'center', 
-          fontFamily: 'Shadows Into Light, cursive', 
+          fontFamily: 'Love Ya Like A Sister, cursive',
           color: '#B3A190', 
           fontSize: '2rem'}}>WHO AM I?</h2>
         </div>

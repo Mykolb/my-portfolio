@@ -87,7 +87,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             margin='normal'
             variant='outlined'
             fullWidth
-            style={{fontFamily:'Shadows Into Light, cursive'}}
+            style={{fontFamily:'Love Ya Like A Sister, cursive'}}
             />
             {touched.email && errors.email && <p>{errors.email}</p>}
             <Field
@@ -120,7 +120,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fontSize='small'
             onClick={handleClickOpen}
             fullWidth
-            style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive', color: '#B3A190'}}
+            style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190'}}
             >Submit the form</Button>
 
           {/* //modal that pops up afer form submission */}
@@ -128,13 +128,13 @@ const ContactPage = ({ errors, touched, values, status }) => {
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
                 Contact Submission
             </DialogTitle>
-            <DialogContent dividers style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }}>
+            <DialogContent dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}>
                 {/* <Typography gutterBottom> */}
                 Your form was submitted. Thank you.
              {/* </Typography> */}
             </DialogContent>
             <DialogActions>
-             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive', color: '#008080'}}>
+             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#008080'}}>
                 Return to website
             </Button>
              </DialogActions>
