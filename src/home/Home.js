@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import Particles from 'react-particles-js';
+import React from 'react'
 import { withRouter } from 'react-router-dom';
 import '../styles/Home.scss';
 import ParticleAnimation from '../particle_animation/ParticleAnimation'

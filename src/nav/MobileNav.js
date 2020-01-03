@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import * as Scroll from 'react-scroll';
 import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
 import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
-import { Slide } from '@material-ui/core';
+
 
 
 export default function MobileNav() {

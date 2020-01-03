@@ -26,7 +26,6 @@ const useStyles = makeStyles({
     // border: '5px solid brown',
     borderBottom: '5px dotted #EBB604',
     width: '100%',
-    margin: '3.5%',
   },
   heading: {
     textAlign: 'center',
@@ -39,7 +38,6 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     margin: 'auto',
     marginTop: '2.5%',
-    marginBottom: '1%',
     padding: '1%',
     justifyContent: 'center',
     alignItems: 'center',

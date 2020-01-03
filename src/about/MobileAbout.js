@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Profile from './profile.jpg'
@@ -8,7 +8,7 @@ import NameAudio from '../name audio/NameAudio';
 
  
       
-      export default function MobileAbout(props) {
+      export default function MobileAbout() {
 
 
     return(

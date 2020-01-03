@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import * as Scroll from 'react-scroll';
 import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
 import '../styles/Nav.scss';
 import MobileNav from './MobileNav';
@@ -69,8 +68,6 @@ useEffect(() => {
         scroller.scrollTo();
       }
 
-
-      // console.log('Project Scroll', scrollTo)
 
     return(
       <>
