@@ -126,9 +126,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
                 Contact Submission
             </DialogTitle>
             <DialogContent dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}>
-                {/* <Typography gutterBottom> */}
                 Your form was submitted. Thank you.
-             {/* </Typography> */}
             </DialogContent>
             <DialogActions>
              <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#008080'}}>

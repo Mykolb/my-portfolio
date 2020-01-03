@@ -54,7 +54,7 @@ useEffect(() => {
     return (
         <div className='nav-wrapper'> 
           <MenuTwoToneIcon style={{ 
-            height: '50px', 
+            height: '65px', 
             width: 'auto',
              }}   
              onClick={handleClick}>
@@ -72,7 +72,7 @@ useEffect(() => {
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            offset={-70} 
+            offset={-90} 
             duration={500}  
             isDynamic={true}
             name='about'
@@ -82,7 +82,7 @@ useEffect(() => {
             activeClass='active'  
             spy={true} 
             smooth={true} 
-            offset={-70} 
+            offset={-90} 
             duration={500}  
             isDynamic={true}
             name='projects'
@@ -92,6 +92,7 @@ useEffect(() => {
             activeClass='active'  
             spy={true} 
             smooth={true} 
+            offset={-150} 
             duration={500}  
             isDynamic={true}
             name='contacts'

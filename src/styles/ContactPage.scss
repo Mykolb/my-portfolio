@@ -32,12 +32,10 @@
     border-radius: 15px;
     padding: 2.5%;
     border: 2px solid #B3A190;
-    // box-shadow: 30px 30px 30px 30px lightgray; 
    
 
 
     @media screen and (max-width:800px) {
-        // margin: 0 auto;
         margin-top: 5%;
         margin-bottom: 5%;
         flex-wrap: wrap;
@@ -50,9 +48,6 @@
 
     }
         @media screen and (max-width: 500px) {
-            // margin: 0 auto;
-            // margin-top: 5%;
-            // margin-bottom: 5%;
             flex-wrap: wrap;
             width: 80%; 
             opacity: 0.9;
@@ -62,10 +57,6 @@
             // border: 2px solid purple;
          }
        }
-
-    //    .MuiButtonBase-root:hover {
-    //        background-color: #EBB604;
-    //    }
     
 .MuiTypography-h6 {
 font-family:  'Love Ya Like A Sister', cursive !important;
