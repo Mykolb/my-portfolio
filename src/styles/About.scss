@@ -3,7 +3,8 @@
     grid-template-columns: repeat(1, 1fr);
     // grid-gap: 30px;
     justify-items: center;
-    margin: 5% 4% 0% 4%;
+    // margin: 5% 4% 0% 4%;
+    margin: 3.5%;
     border-top: 5px dotted #EBB604;
 
     @media screen and (max-width:500px) {
@@ -25,7 +26,7 @@
 
   .aboutHeading {
     // border: 1px solid yellow;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Love Ya Like A Sister', cursive;
     color: #B3A190;
     font-size: 2rem;
     
@@ -96,6 +97,8 @@
       width: 500px;
       margin: 0 auto;
       font-size: 1.30rem;
+      line-height: 1.4;
+      letter-spacing: 1.2px;
    }
 
    @media screen and (max-width:800px) {

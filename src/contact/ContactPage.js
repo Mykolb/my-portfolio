@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {  withFormik, Form, Field} from 'formik';
-import { TextField, Select } from 'formik-material-ui';
+import { TextField } from 'formik-material-ui';
 import Button from '@material-ui/core/Button';
 import * as Yup from 'yup';
 import axios from 'axios'
@@ -76,8 +76,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
 
             <Form className='form'>
             <h2 id='contacts-section' className='contact-header'>CONTACT</h2>
-            <h3 className='contact-subheader'>Interested? Send me a message!</h3>
-            {touched.name && errors.name && <p>{errors.name}</p> }
+            <h3 className='contact-subheader'>Questions? Send me a message!</h3>
             <Field
             className='field'
             type='name'
@@ -87,9 +86,8 @@ const ContactPage = ({ errors, touched, values, status }) => {
             margin='normal'
             variant='outlined'
             fullWidth
-            style={{fontFamily:'Shadows Into Light, cursive'}}
+            style={{fontFamily:'Love Ya Like A Sister, cursive'}}
             />
-            {touched.email && errors.email && <p>{errors.email}</p>}
             <Field
             className='field'
             type='email'
@@ -100,7 +98,6 @@ const ContactPage = ({ errors, touched, values, status }) => {
             variant='outlined'
             fullWidth
             />
-            {touched.message && errors.message && <p>{errors.message}</p>}
             <Field
                className='message'
                type='message'
@@ -120,7 +117,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fontSize='small'
             onClick={handleClickOpen}
             fullWidth
-            style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive', color: '#B3A190'}}
+            style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190'}}
             >Submit the form</Button>
 
           {/* //modal that pops up afer form submission */}
@@ -128,13 +125,13 @@ const ContactPage = ({ errors, touched, values, status }) => {
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
                 Contact Submission
             </DialogTitle>
-            <DialogContent dividers style={{fontFamily:'Shadows Into Light, cursive', color: '#B3A190' }}>
+            <DialogContent dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}>
                 {/* <Typography gutterBottom> */}
                 Your form was submitted. Thank you.
              {/* </Typography> */}
             </DialogContent>
             <DialogActions>
-             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Shadows Into Light, cursive', color: '#008080'}}>
+             <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#008080'}}>
                 Return to website
             </Button>
              </DialogActions>

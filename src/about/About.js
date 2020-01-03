@@ -1,24 +1,18 @@
 import React, {useState, useEffect} from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
-import Profile from './profile.jpg'
-import '../styles/About.scss'
-import MobileAbout from './MobileAbout'
-
+import Profile from './profile.jpg';
+import '../styles/About.scss';
+import MobileAbout from './MobileAbout';
 
  
       
-      export default function About(props) {
+      export default function About() {
 
       const [state, setState] = useState({
         width: window.innerWidth
       })
       
-	let audio = new Audio('https://media.merriam-webster.com/soundc11/bix/bixmic01.wav')
-
-	const soundEffect = () => {
-		audio.play()
-  }
 
   useEffect(() => {
 
@@ -46,7 +40,7 @@ import MobileAbout from './MobileAbout'
         id='about-section'
         style={{ 
           textAlign: 'center', 
-          fontFamily: 'Shadows Into Light, cursive', 
+          fontFamily: 'Love Ya Like A Sister, cursive',
           color: '#B3A190', 
           fontSize: '2rem'}}>WHO AM I?</h2>
         </div>
