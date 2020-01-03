@@ -18,7 +18,7 @@ import NameAudio from '../name audio/NameAudio';
         id='about-section'
         style={{ 
           textAlign: 'center', 
-          fontFamily: 'Shadows Into Light, cursive', 
+          fontFamily: 'Love Ya Like A Sister, cursive', 
           color: '#B3A190', 
           fontSize: '2rem', 
           marginTop: '15%'}}>WHO AM I?</h2>
