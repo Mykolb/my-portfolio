@@ -17,7 +17,7 @@ const ParticleAnimation = () => {
 			"shape": {
 			"type": "circle",
 			"stroke": {
-				"width": 2,
+				"width": 1,
 				"color": '#B3A190',
 			}
 			},
@@ -28,7 +28,7 @@ const ParticleAnimation = () => {
 	            "value": 5,
 	            "random": true,
 	            "anim": {
-	                "speed": 1,
+	                "speed": 2,
 	                "size_min": 0.3
 	            }
 	        },
@@ -58,7 +58,6 @@ const ParticleAnimation = () => {
 	                "distance": 250,
 	                "duration": 2,
 	                "size": 15,
-	                "opacity": 0
 	            },
 	            "repulse": {
 	                "distance": 400,

@@ -76,8 +76,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
 
             <Form className='form'>
             <h2 id='contacts-section' className='contact-header'>CONTACT</h2>
-            <h3 className='contact-subheader'>Interested? Send me a message!</h3>
-            {touched.name && errors.name && <p>{errors.name}</p> }
+            <h3 className='contact-subheader'>Questions? Send me a message!</h3>
             <Field
             className='field'
             type='name'
@@ -89,7 +88,6 @@ const ContactPage = ({ errors, touched, values, status }) => {
             fullWidth
             style={{fontFamily:'Love Ya Like A Sister, cursive'}}
             />
-            {touched.email && errors.email && <p>{errors.email}</p>}
             <Field
             className='field'
             type='email'
@@ -100,7 +98,6 @@ const ContactPage = ({ errors, touched, values, status }) => {
             variant='outlined'
             fullWidth
             />
-            {touched.message && errors.message && <p>{errors.message}</p>}
             <Field
                className='message'
                type='message'
