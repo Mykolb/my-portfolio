@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Profile from './profile.jpg';
 import '../styles/About.scss';
 import MobileAbout from './MobileAbout';
-
+//Creating component that renders based on screen width 
  
       
       export default function About() {
@@ -21,6 +21,7 @@ import MobileAbout from './MobileAbout';
     // returned function will be called on component unmount 
     return () => {
       window.removeEventListener('resize', handleSize)
+      console.log('Working?', handleSize)
     }
     }, [])
   
@@ -52,13 +53,11 @@ import MobileAbout from './MobileAbout';
         className='bigAvatar' 
         />
       </Grid>
-      {/* <div className='bioContainer'> */}
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
         <p className='bio'>
           Welcome to my page! I'm Mykol, a Full Stack Developer. I've spent the last year studying Web Development and Computer Science at Lambda School. I've also had the amazing opportunity to intern as a Team Lead. Please check out my projects and don't hesitate to contact me if you have any questions. Thanks for visiting! 
        </p>
        </Grid>
-      {/* </div> */}
         </div>
         </div>
         ) :  (  <MobileAbout />

@@ -1,14 +1,13 @@
 .nav-wrapper {
     // border: 3px solid green;
     width: 100%;
-    height: 50px;
+    height: 11vh;
     display: flex;
     position: sticky;
     top: 0;
     background:#FFFFFF;
     overflow:hidden;
     z-index: 1;
-    // border-bottom: 5px dotted #EBB604;
    
     @media screen and (max-width: 500px) {
         top: 0;
@@ -17,7 +16,6 @@
     }
     @media screen and (max-width: 800px) {
         width: 100%;
-        height: 50px;
         display: flex;
         position: sticky;
         top: 0;
@@ -30,7 +28,7 @@
 /* 
 zindex fixed overlapping nav */
 .nav-wrapper a {
-    margin: 0% 3% 0% 3%;
+    margin: 1.5% 3% 0% 3%;
     font-size: 1.5rem;
     text-decoration: none;
     color: #B3A190;

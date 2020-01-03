@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
 import '../styles/Nav.scss';
 import MobileNav from './MobileNav';
-
+//Creating component that renders based on screen width 
 
 
 const Nav = () => {
@@ -25,7 +25,6 @@ const Nav = () => {
   
     const handleSize = () => {
       setNavState({width: window.innerWidth})
-      console.log('HANDLESTATE', handleSize)
     }
     
     const isMobileView = navState.width <= 800
@@ -78,7 +77,7 @@ useEffect(() => {
                 activeClass='active'  //class applied when element is reached 
                 spy={true} //make link selected when scroll is at target position
                 smooth={true} //animate the scrolling
-                offset={-80} //additional scrolling px 
+                offset={-70} //additional scrolling px 
                 duration={700}  //time of scroll animation 
                 isDynamic={true} //for content that expands, needs recaulated
                 name='home'
