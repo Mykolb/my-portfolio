@@ -1,13 +1,14 @@
 .nav-wrapper {
     // border: 3px solid green;
     width: 100%;
-    height: 11vh;
     display: flex;
     position: sticky;
     top: 0;
     background:#FFFFFF;
     overflow:hidden;
     z-index: 1;
+   
+
    
     @media screen and (max-width: 500px) {
         top: 0;

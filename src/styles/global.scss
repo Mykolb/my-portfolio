@@ -1,14 +1,14 @@
 
-html {
+html, body {
 	font-size: 62.5%;
-}
-
-body {
+	height: 100vh;
 	font-family: 'Love Ya Like A Sister', cursive;
 	button:focus {
 		outline: none;
 	}
 }
+
+
 
 a {
     font-family: 'Love Ya Like A Sister', cursive;
