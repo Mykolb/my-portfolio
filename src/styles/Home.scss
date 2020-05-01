@@ -1,6 +1,7 @@
 
 .design-background {
     background: white;
+    height: 100vh;
 
     @media screen and (max-width: 500px) {
       display: none;
@@ -9,7 +10,6 @@
     display: none;
   }
 }
- 
   
   .welcome-div {
     position: relative;
@@ -77,6 +77,19 @@
   }
 
   #volume-icon:hover {
-    color:#008080 ;
+    color:#008080;
   }
+
+#arrow-icon {
+  color: #B3A190;
+}
+
+#arrow-icon:hover {
+  color: #008080;
+  transition: 0.15s;
+  transform: translate(-10px, 0px);
+  transform: rotate(90deg)
+}
+
+
 
