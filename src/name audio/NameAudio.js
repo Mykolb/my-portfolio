@@ -16,4 +16,4 @@ const NameAudio = () => {
 
 
 
-export default NameAudio
+export default NameAudio;
