@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import '../styles/Home.scss';
 import ParticleAnimation from '../particle_animation/ParticleAnimation'
 import NameAudio from '../name audio/NameAudio';
-import { Link, animateScroll as scroll, scroller} from 'react-scroll';
+import { Link, scroller} from 'react-scroll';
 
 const Home = () => {
 
@@ -30,7 +30,7 @@ return(
             offset={-100} 
             duration={200} 
             isDynamic={true} 
-			onClick={() => scrollToTop()}><i class="fas fa-arrow-right fa-2x" id='arrow-icon'/>
+			onClick={() => scrollToTop()}><i className="fas fa-arrow-right fa-2x" id='arrow-icon'/>
 			</Link>
 	</div>
     </div>

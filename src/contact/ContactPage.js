@@ -22,7 +22,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             if(status) {
                 setSignin([...signin, status])
             }
-        }, [status])
+        }, [status, signin])
 
 //for button dialog
     const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
   });
   
     const DialogTitle = withStyles(styles)(props => {
-        const { children, classes, onClose } = props;
+        const { children, classes } = props;
     return (
       <MuiDialogTitle disableTypography className={classes.root}>
         <Typography variant="h6">{children}</Typography>
@@ -160,7 +160,7 @@ validationSchema: Yup.object().shape({
     .required(),
     message: Yup.string()
     .required()
-    .max(250, 'Message hass exceeded character limit')
+    .max(250, 'Message must be 250 characters or less')
     }),
 
 

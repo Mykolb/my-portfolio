@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
+import { Link, scroller, Events } from "react-scroll";
 import '../styles/Nav.scss';
 import MobileNav from './MobileNav';
 //Creating component that renders based on screen width 

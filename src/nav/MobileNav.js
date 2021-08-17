@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
+import { Link, scroller, Events } from "react-scroll";
 import Menu from '@material-ui/core/Menu';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
 
