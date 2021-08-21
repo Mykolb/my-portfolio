@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react'
 import { Link, scroller, Events } from "react-scroll";
 import Menu from '@material-ui/core/Menu';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
-
+import useData from '../Hooks/useData';
 
 
 export default function MobileNav() {
+  // const { setOpenForm, openForm} = useData()
+  
+  // const submitFormOpen = () => {
+  //   console.log('clicked!')
+  //     setOpenForm(true)
+  // }
     const [anchorEl, setAnchorEl] = useState(null);
     
 
@@ -97,6 +103,17 @@ useEffect(() => {
             isDynamic={true}
             name='contacts'
             onClick={() => scrollToContact()}>Contact</Link>
+            <Link
+            to='signin-form-section'
+            activeClass='active'  
+            spy={true} 
+            smooth={true} 
+            offset={-150} 
+            duration={500}  
+            isDynamic={true}
+            name='signin'
+            // onClick={() => submitFormOpen()}
+            >Sign In</Link>
           </Menu>
         </div>
       );

@@ -3,14 +3,13 @@ import { withRouter } from 'react-router-dom';
 import '../styles/Home.scss';
 import ParticleAnimation from '../particle_animation/ParticleAnimation'
 import NameAudio from '../name audio/NameAudio';
-import { Link, scroller} from 'react-scroll';
+import { Link } from "react-router-dom";
+
+// import { Link, scroller} from 'react-scroll';
 
 const Home = () => {
 
 
-const scrollToTop = () => {
-	scroller.scrollTo()
-}
 
 
 return(
@@ -23,14 +22,10 @@ return(
 		<p className='intro-header'>definition: web developer{' '}</p>
 		{/* wrapping icon in link tag */}
 			<Link
-			to='about-section'
+			to={`about`}
 			name='about'
-			spy={true} 
-            smooth={true} 
-            offset={-100} 
-            duration={200} 
-            isDynamic={true} 
-			onClick={() => scrollToTop()}><i className="fas fa-arrow-right fa-2x" id='arrow-icon'/>
+			activeClassName='active'
+			><i className="fas fa-arrow-right fa-2x" id='arrow-icon'/>
 			</Link>
 	</div>
     </div>
