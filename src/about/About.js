@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import '../styles/About.scss';
 import MobileAbout from './MobileAbout';
 import Resume from '../resume/Resume';
+import Skills from './Skills';
 //Creating component that renders based on screen width 
  
       
@@ -35,15 +36,6 @@ import Resume from '../resume/Resume';
       <>      
 {!isMobileView ? (
       <div>
-        <div className='aboutContainer'>
-        <h2 className='aboutHeading' 
-        id='about-section'
-        style={{ 
-          textAlign: 'center', 
-          fontFamily: 'Love Ya Like A Sister, cursive',
-          color: '#B3A190', 
-          fontSize: '2rem'}}>WHO AM I?</h2>
-        </div>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
         <p className='bio'>
@@ -53,6 +45,7 @@ import Resume from '../resume/Resume';
           <h4> <Resume /> to check out my resume.</h4>
         </Grid>
        </Grid>
+       <Skills />
         </div>
         </div>
         ) :  (  <MobileAbout />

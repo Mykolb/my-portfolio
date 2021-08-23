@@ -5,12 +5,13 @@
     bottom: 0;
     justify-content: center;
     background-color: #FFFFFF;
-    border-top: 5px dotted #EBB604;
-    padding: 1%;
+    // border-top: 5px dotted #EBB604;
+    padding: .5%;
 }
 
 #github-icon {
     color: #211f1f;
+    border: none;
 }
 
  #github-icon:hover {
@@ -19,6 +20,7 @@
 
 #linkedin-icon{
     color: #0077B5;
+    border: none;
 }
 
 #linkedin-icon:hover {
@@ -28,6 +30,7 @@
 
  #twitter-icon {
     color: #1DA1F2;
+    border: none;
 }
 
 #twitter-icon:hover {

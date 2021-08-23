@@ -6,8 +6,6 @@ import MobileNav from './MobileNav';
 
 
 //Creating component that renders based on screen width 
-
-
 const Nav = () => {
 
 
@@ -43,12 +41,12 @@ const Nav = () => {
         <nav className='nav-wrapper'>
                 <NavLink
                 to={`/`}
-                activeClassName='active'  //class applied when element is reached 
+                // activeClassName='active'  //class applied when element is reached 
                 name='home'
                 >Home</NavLink>
                 <NavLink
                 to={`/about`}
-                activeClasName='active'  
+                activeClassName='active'  
                 name='about'
                 >About</NavLink>
                 <NavLink

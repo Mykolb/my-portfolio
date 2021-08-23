@@ -24,7 +24,7 @@ return(
 			<Link
 			to={`about`}
 			name='about'
-			activeClassName='active'
+			// activeClassName='active'
 			><i className="fas fa-arrow-right fa-2x" id='arrow-icon'/>
 			</Link>
 	</div>

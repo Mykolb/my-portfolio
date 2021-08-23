@@ -8,8 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
 import '../styles/Projects.scss';
-import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-
+import AddProjectForm from './AddProjectForm';
 
 
 
@@ -25,7 +24,7 @@ const useStyles = makeStyles({
     margin: '0 auto',
     justifyContent: 'center',
     // border: '5px solid brown',
-    borderBottom: '5px dotted #EBB604',
+    // borderBottom: '5px dotted #EBB604',
     width: '100%',
   },
   heading: {
@@ -66,9 +65,9 @@ export default function Projects() {
 
   return (
       <div className={classes.container}>
-        <div className={classes.headingContainer}>
+        {/* <div className={classes.headingContainer}>
           <h2 className={classes.heading} id='project-section'>PROJECTS</h2>
-          </div>
+          </div> */}
       <div className={classes.cardContainer}>   
     <Card className={classes.card}>
       <CardActionArea>
@@ -180,9 +179,8 @@ export default function Projects() {
   </Button>
 </CardActions>
 </Card>
-<AddCircleOutlineIcon style={{ fontSize: 45}}/>
+<AddProjectForm />
 </div> 
-
 </div>
   )
 }

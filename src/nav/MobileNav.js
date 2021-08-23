@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Link, scroller, Events } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import Menu from '@material-ui/core/Menu';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
-import useData from '../Hooks/useData';
+
 
 
 export default function MobileNav() {
-  // const { setOpenForm, openForm} = useData()
-  
-  // const submitFormOpen = () => {
-  //   console.log('clicked!')
-  //     setOpenForm(true)
-  // }
+
     const [anchorEl, setAnchorEl] = useState(null);
     
 
@@ -24,37 +19,6 @@ export default function MobileNav() {
     };
 
 
-//scrolling events
-useEffect(() => {
-  Events.scrollEvent.register('begin', function() {
-    console.log('begin', arguments)
-  })
-
-  Events.scrollEvent.register('end', function() {
-    console.log('end', arguments);
-  });
-
-    return() => {
-      Events.scrollEvent.remove('begin')
-      Events.scrollEvent.remove('end')
-    }
-}, [])
-
-
-
-//scrolling 
-
-      const scrollToContact = () => {
-        scroller.scrollTo();
-      }
-
-      const scrollToProjects = () => {
-        scroller.scrollTo();
-      }
-
-      const scrollToAbout = () => {
-        scroller.scrollTo();
-      }
 
      //changed width from 5% to auto
     return (
@@ -73,47 +37,26 @@ useEffect(() => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
             >
-            <Link
-            to='about-section' 
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-90} 
-            duration={500}  
-            isDynamic={true}
-            name='about'
-            onClick={() => scrollToAbout()}>About</Link>
-            <Link
-            to='project-section' 
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-90} 
-            duration={500}  
-            isDynamic={true}
+            <NavLink
+            to={`/about`}
+            activeClassName='active'  
+            name='/about'
+            >About</NavLink>
+            <NavLink
+            to={`/projects`}
+            activeClassName='active'  
             name='projects'
-            onClick={() => scrollToProjects()}>Projects</Link>
-            <Link 
-            to='contacts-section'
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-150} 
-            duration={500}  
-            isDynamic={true}
+            >Projects</NavLink>
+            <NavLink 
+            to={`/contact-page`}
+            activeClassName='active'  
             name='contacts'
-            onClick={() => scrollToContact()}>Contact</Link>
-            <Link
-            to='signin-form-section'
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-150} 
-            duration={500}  
-            isDynamic={true}
+            >Contact</NavLink>
+            <NavLink
+            to={`/sign-in`}
+            activeClassName='active'  
             name='signin'
-            // onClick={() => submitFormOpen()}
-            >Sign In</Link>
+            >Sign In</NavLink>
           </Menu>
         </div>
       );
