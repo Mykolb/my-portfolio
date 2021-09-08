@@ -13,7 +13,7 @@ import Footer from './footer/Footer';
 //Component to hold all of the exported components
 export const Container = () => {
     return(
-        <div>
+        <>
       <Route exact path={`/`} component={Home} />
       <Nav />
       <Route exact path={`/about`} component={About} />
@@ -21,7 +21,7 @@ export const Container = () => {
       <Route exact path={`/contact-page`} component={ContactPage} />
       <Route exact path={`/sign-in`} component={SignIn} />
         <Footer />
-        </div>
+        </>
     )
 }
 

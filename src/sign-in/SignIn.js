@@ -8,34 +8,44 @@ import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import Button from '@material-ui/core/Button';
+import Logo from '../assets/logo-no-url.png';
 
 
 
 
 const SignIn = () => {
 
+        const [btnText, setBtnText] = useState('Click to sign in')
 
+        const onFormSubmit = () => {
+            setBtnText('Signing In...')
+        }
 
     return(
         <div className='signin-form-container' >
-            <h3 className='sign-in-header'>Sign In</h3>
+            <section className='signin-image-container'>
+            <img src={Logo} alt='site-logo' className='signin-image'/>
+            </section>
             <Form className='signin-form'>
+            <h3 className='sign-in-header'>Sign In</h3>
             <Field
                 type='username'
                 name='username'
-                label='Enter username'
+                label='Username'
                 component={TextField}
-                variant='outlined'
+                variant='standard'
                 fullWidth
+                className='signin-input'
                 style={{fontFamily:'Love Ya Like A Sister, cursive'}}
                 />
             <Field
                 type='password'
                 name='password'
-                label='Enter password'
+                label='Password'
                 component={TextField}
-                variant='outlined'
+                variant='standard'
                 fullWidth
+                className='signin-input'
                 style={{fontFamily:'Love Ya Like A Sister, cursive'}}
                 />
             <Button 
@@ -44,8 +54,9 @@ const SignIn = () => {
                 margin='normal'
                 fontSize='small'
                 fullWidth
-                style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190'}}
-                > Click to Sign in
+                style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190',  height: '40px', marginTop: '3%'}}
+                onClick={(() => onFormSubmit())}
+                > {btnText}
             </Button>
             </Form >
  

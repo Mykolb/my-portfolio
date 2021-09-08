@@ -41,28 +41,33 @@ const Nav = () => {
         <nav className='nav-wrapper'>
                 <NavLink
                 to={`/`}
-                // activeClassName='active'  //class applied when element is reached 
+                activeClassName='active'  //class applied when element is reached 
                 name='home'
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 >Home</NavLink>
                 <NavLink
                 to={`/about`}
                 activeClassName='active'  
                 name='about'
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 >About</NavLink>
                 <NavLink
                 to={`/projects`}
                 activeClassName='active'  
                 name='projects'
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 >Projects</NavLink>
                 <NavLink
                 to={`/contact-page`}
                 activeClassName='active'  
                 name='contacts'
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 >Contact</NavLink>
                 <NavLink
                 to={`/sign-in`}
                 activeClassName='active'  
                 name='signin'
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 // onClick={() => submitFormOpen()}
                 >Sign In</NavLink>
         </nav>

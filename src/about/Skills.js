@@ -9,7 +9,7 @@ import sassIcon from '../assets/icons/sass.png';
 const Skills = () => {
     return(
         <section>
-             <img src={htmlIcon} alt='HTML5 logo'/>
+            <img src={htmlIcon} alt='HTML5 logo'/>
             <img src={cssIcon} alt='CSS3 logo'/>
             <img src={jsIcon} alt='JavaScript logo'/>
             <img src={reactIcon} alt='react logo'/>
