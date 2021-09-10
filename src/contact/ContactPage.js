@@ -122,10 +122,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
 
           {/* //modal that pops up afer form submission */}
         <Dialog onClose={handleClose}  open={open}>
-            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-                Thank You
-            </DialogTitle>
-            <DialogContent dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}>
+            <DialogContent onClose={handleClose} dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190', borderTop: 'none', borderBottom: 'none' }}>
                 Your form was submitted. I'll be in touch soon!
             </DialogContent>
             <DialogActions>

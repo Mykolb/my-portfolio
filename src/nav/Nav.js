@@ -43,7 +43,7 @@ const Nav = () => {
                 to={`/`}
                 activeClassName='active'  //class applied when element is reached 
                 name='home'
-                activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                // activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 >Home</NavLink>
                 <NavLink
                 to={`/about`}

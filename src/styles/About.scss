@@ -3,7 +3,6 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     margin: 3.5%;
-    // border-top: 5px dotted #EBB604;
 
     @media screen and (max-width:500px) {
             display: flex;
@@ -11,17 +10,24 @@
             margin: 3.5%;  
     }
 
+  
+      #volume-icon {
+       font-size: 1.5rem; 
+       display: initial;
+       margin-top: 0;
+      margin-bottom: 0;
+    }
+    
+
 
 .aboutContainer {
     margin: 0 auto;
     justify-content: center;
-    // border: 5px solid gold;
     width: 100%;
     
   }
 
   .aboutHeading {
-    // border: 1px solid yellow;
     font-family: 'Love Ya Like A Sister', cursive;
     color: #B3A190;
     font-size: 2rem;
@@ -30,18 +36,15 @@
 
   .mobile-aboutHeading {
     @media screen and (max-width: 500px) {
-      margin-top: 15%;
-      border-bottom: 5px dotted #EBB604;
+      margin-top: 0;
     }
     @media screen and (max-width: 800px) {
      margin-top: 15%;
-     border-bottom: 5px dotted #EBB604;
    }
   }
 
 
   .bioContainer {
-    // border: 4px solid brown;
     width: 100%;
     padding-left: 2%;
     font-size: 1.25rem;
@@ -67,9 +70,7 @@
 
     @media screen and (max-width:500px) {
       text-align: center;
-      // padding-top: 15%;
-      padding-top: 15% !important;
-      width: 500px;
+      max-width: 500px;
       margin: 0 auto;
       font-size: 1.30rem;
       line-height: 1.4;
@@ -82,10 +83,9 @@
     width: 500px;
     margin: 0 auto;
     font-size: 1.30rem;
- }
-
-
   }
+}
+
 
   .MuiGrid-grid-xs-6 {
 
@@ -136,4 +136,13 @@
     }
 }
 
+}
+
+.skills-icons {
+  margin: 1%;
+  max-width: 400px;
+  
+  img {
+    width: 60px;
+  }
 }

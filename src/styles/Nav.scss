@@ -41,7 +41,6 @@ zindex fixed overlapping nav */
     @media screen and (max-width: 500px) {
         // border: 1px solid #B3A190;
         align-items: center; 
-        
     }
     @media screen and (max-width: 800px) {
         margin: 0% 3% 0% 3%;
@@ -55,9 +54,8 @@ zindex fixed overlapping nav */
       }
 }
 
-.nav-wrapper a:hover, .nav-wrapper a.active {
+.nav-wrapper a:hover{
     color: #E63629;
-
 }
 
 .MuiList-root {  

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import Menu from '@material-ui/core/Menu';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
@@ -24,7 +24,7 @@ export default function MobileNav() {
     return (
         <div className='nav-wrapper'> 
           <MenuTwoToneIcon style={{ 
-            height: '65px', 
+            height: '50px', 
             width: 'auto',
              }}   
              onClick={handleClick}>
@@ -41,21 +41,25 @@ export default function MobileNav() {
             to={`/about`}
             activeClassName='active'  
             name='/about'
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
             >About</NavLink>
             <NavLink
             to={`/projects`}
             activeClassName='active'  
             name='projects'
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
             >Projects</NavLink>
             <NavLink 
             to={`/contact-page`}
             activeClassName='active'  
             name='contacts'
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
             >Contact</NavLink>
             <NavLink
             to={`/sign-in`}
             activeClassName='active'  
             name='signin'
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
             >Sign In</NavLink>
           </Menu>
         </div>

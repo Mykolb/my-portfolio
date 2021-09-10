@@ -35,7 +35,7 @@ import Skills from './Skills';
     return(
       <>      
 {!isMobileView ? (
-      <div>
+      <>
         <div className='entireContainer'>
         <Grid container direction='row' justify="center" alignItems="baseline" item xs={6}>
         <p className='bio'>
@@ -47,7 +47,7 @@ import Skills from './Skills';
        </Grid>
        <Skills />
         </div>
-        </div>
+        </>
         ) :  (  <MobileAbout />
         )}
         </>
