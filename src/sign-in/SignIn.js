@@ -54,7 +54,7 @@ const SignIn = () => {
                 margin='normal'
                 fontSize='small'
                 fullWidth
-                style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190',  height: '40px', marginTop: '3%'}}
+                // style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190',  height: '40px', marginTop: '3%'}}
                 onClick={(() => onFormSubmit())}
                 > {btnText}
             </Button>

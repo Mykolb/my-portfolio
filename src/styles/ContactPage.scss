@@ -13,6 +13,14 @@
     transform: translate(0, 50%);
     -ms-transform: translate(0, 50%);
 
+    @media screen and (max-width: 500px) {
+            flex-direction: column;
+            height: auto;
+            transform: none;
+            -ms-transform: none;
+            max-width: 100%;
+            box-shadow: none;
+    }
 }
 
 .contact-info {
@@ -24,6 +32,14 @@
     font-size: 1.2rem;
     border-radius: 15px;
     text-align: left;
+
+    @media screen and (max-width: 500px) {
+        margin: 2%;
+        width: 90%;
+        text-align: center;
+        box-shadow: none;
+        border: 2px solid #B3A190;
+    }
 }
 
 .contact-header {
@@ -66,12 +82,14 @@
 
     }
         @media screen and (max-width: 500px) {
-            flex-wrap: wrap;
-            width: 80%; 
+            max-width: 100%; 
+            width: 90%;
             opacity: 0.9;
             transition: 0.3s;
             border-radius: 10px;
             padding: 2.5%;
+            margin-top: 5%;
+            text-align: center;
             // border: 2px solid purple;
          }
        }
@@ -83,5 +101,22 @@ color: #B3A190;
 text-transform: uppercase;
 }
 
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.contact-form-button {
+    border-radius: 15px;
+    font-family: Love Ya Like A Sister, cursive;
+    color: #FFFFFF;
+    width: 30%;
+    margin-top: 3%;
+    width: 100%; 
+    background-color: #E63629;
+
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
+}
 
 
+
+.contact-form-button:hover {
+    opacity: 0.9;
+}

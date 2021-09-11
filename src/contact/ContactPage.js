@@ -117,7 +117,6 @@ const ContactPage = ({ errors, touched, values, status }) => {
             margin='normal'
             fontSize='small'
             onClick={handleClickOpen}
-            style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190', width: '30%', marginTop: '3%'}}
             >Submit the form</Button>
 
           {/* //modal that pops up afer form submission */}
