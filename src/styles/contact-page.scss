@@ -25,6 +25,10 @@
             max-width: 100%;
             box-shadow: none;
     }
+
+    @media screen and (max-width: 800px) {
+        width: 96%;
+     }
 }
 
 .contact-info {
@@ -120,7 +124,9 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.contact-form-button {
     }
 }
 
-
+.MuiPaper-root.MuiCard-root.project-card.MuiPaper-elevation1.MuiPaper-rounded {
+    border-radius: 15px;
+}
 
 .contact-form-button:hover {
     opacity: 0.9;

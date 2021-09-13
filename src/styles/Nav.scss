@@ -95,6 +95,10 @@ svg#x-icon {
     text-transform: uppercase;
     line-height: 1.8;
     color: #B3A190;
+
+    @media screen and (max-width: 800px) {
+        font-size: 2rem;
+    }
 }
 
 .MuiList-root a:hover {
