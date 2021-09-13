@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Grid from '@material-ui/core/Grid';
-import '../styles/About.scss';
+import '../styles/about.scss';
 import MobileAbout from './MobileAbout';
 import Resume from '../resume/Resume';
 import Skills from './Skills';

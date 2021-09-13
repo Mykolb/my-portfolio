@@ -23,10 +23,14 @@
 
 .signin-image-container {
     height: 400px;
+    text-align: center;
+
 
 
     @media screen and (max-width: 500px) {
         height: auto;
+        background-color: #FFFFFF;
+        border-radius: 0 0 15px 15px;
     }
 }
 
@@ -36,8 +40,6 @@
 
     @media screen and (max-width: 500px) {
         height: 300px;
-        width: 100%;
-        border-radius: 0 0 15px 15px;
     }
 }
 
@@ -68,10 +70,14 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signin-form-btn.MuiButto
     color: #FFFFFF;
     height: 40px;
     margin-top: 5%;
-    background-color: #EBB604;
+    background-color: #008080;
 
     @media screen and (max-width: 500px) {
         width: 90%;
     }
 
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signin-form-btn.MuiButton-fullWidth:hover {
+    opacity: 0.9;
 }

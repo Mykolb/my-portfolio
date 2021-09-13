@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom';
-import '../styles/Home.scss';
+import '../styles/home.scss';
 import ParticleAnimation from '../particle_animation/ParticleAnimation'
 import NameAudio from '../name audio/NameAudio';
 import { Link } from "react-router-dom";

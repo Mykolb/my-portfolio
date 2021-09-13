@@ -6,8 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
-import '../styles/Projects.scss';
-import AddProjectForm from './AddProjectForm';
+import '../styles/projects.scss';
+// import AddProjectForm from './AddProjectForm';
 
 
 
@@ -37,10 +37,10 @@ const Projects = () => {
      
       <CardActions className='project-card-btn'>
         <Button style={{fontFamily:'Love Ya Like A Sister, cursive', borderRadius: '5px', color: '#EBB604'}} size="small" color="primary" href='https://github.com/BW-Miracle-Messages/Back-End' target='_blank' rel='noopener noreferrer'>
-        <i class=" fa fa-solid fa-code"></i>
+        <i className=" fa fa-solid fa-code"></i>
         </Button>
         <Button style={{fontFamily:'Love Ya Like A Sister, cursive', borderRadius: '5px', color: '#008080'}} size="small" color="primary" href='https://miracle-messages2019.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
-        <i class="fa fa-solid fa-globe"></i>
+        <i className="fa fa-solid fa-globe"></i>
         </Button>
         <Button style={{fontFamily:'Love Ya Like A Sister, cursive', borderRadius: '5px', color: '#EBB604'}} size="small" color="primary" href='https://documenter.getpostman.com/view/7274937/SVmzuGiZ?version=latest' target='_blank' rel='noopener noreferrer'>
           Documentation
@@ -66,10 +66,10 @@ const Projects = () => {
 </CardActionArea>
 <CardActions className='project-card-btn'>
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/Jeep-Prices-Repo' target='_blank' rel='noopener noreferrer'>
-  <i class=" fa fa-solid fa-code"></i>
+  <i className=" fa fa-solid fa-code"></i>
   </Button>
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-prices-repo-be.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
-  <i class="fa fa-solid fa-globe"></i>
+  <i className="fa fa-solid fa-globe"></i>
   </Button>
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', borderRadius: '5px', color: '#EBB604'}} size="small" color="primary" href='https://documenter.getpostman.com/view/7274937/TW6tKV9M' target='_blank' rel='noopener noreferrer'>
     Documentation
@@ -95,10 +95,10 @@ const Projects = () => {
 </CardActionArea>
 <CardActions className='project-card-btn'>
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
-  <i class=" fa fa-solid fa-code"></i>
+  <i className=" fa fa-solid fa-code"></i>
   </Button>
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
-  <i class="fa fa-solid fa-globe"></i>
+  <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
 </Card>
@@ -121,10 +121,10 @@ const Projects = () => {
 </CardActionArea>
 <CardActions className='project-card-btn'>
   <Button  style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
-  <i class=" fa fa-solid fa-code"></i>
+  <i className=" fa fa-solid fa-code"></i>
   </Button>
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
-  <i class="fa fa-solid fa-globe"></i>
+  <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
 </Card>

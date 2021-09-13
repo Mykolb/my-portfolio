@@ -18,7 +18,7 @@ export const Container = () => {
       <Nav />
       <Route exact path={`/about`} component={About} />
       <Route exact path={`/projects`} component={Projects} />
-      <Route exact path={`/contact-page`} component={ContactPage} />
+      <Route exact path={`/contact`} component={ContactPage} />
       <Route exact path={`/sign-in`} component={SignIn} />
         <Footer />
         </>

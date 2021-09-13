@@ -41,6 +41,7 @@ zindex fixed overlapping nav */
     @media screen and (max-width: 500px) {
         // border: 1px solid #B3A190;
         align-items: center; 
+        color: #B3A190;
     }
     @media screen and (max-width: 800px) {
         margin: 0% 3% 0% 3%;
@@ -58,15 +59,38 @@ zindex fixed overlapping nav */
     color: #E63629;
 }
 
+svg#ham-icon {
+    height: 50px; 
+    width: auto;
+}
+
+svg#x-icon {
+    height: 100px;
+    z-index: 1;
+}
+
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+        position: unset;
+        max-width: 100%;
+        box-shadow: none;
+        // maxheight style causing err pop uo err to display
+        max-height: fit-content;
+
+    }
+
+
+
 .MuiList-root {  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 150px;
+    // width: 100px;
+    // height: 150px;
+    max-height: 100vh;
+    height: 100vh;
     margin: 0;
-    padding: 5%;
+    // padding: 5%;
     font-size: 1.25rem;
     text-transform: uppercase;
     line-height: 1.8;
@@ -81,3 +105,7 @@ zindex fixed overlapping nav */
 }
 
 
+ul.MuiList-root.MuiMenu-list.MuiList-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}

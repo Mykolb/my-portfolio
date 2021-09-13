@@ -3,6 +3,7 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     margin: 3.5%;
+   
 
     @media screen and (max-width:500px) {
             display: flex;
@@ -12,10 +13,15 @@
 
   
       #volume-icon {
-       font-size: 1.5rem; 
-       display: initial;
-       margin-top: 0;
+      font-size: 1.5rem; 
+      display: initial;
+      margin-top: 0;
       margin-bottom: 0;
+
+
+      #volume-icon:hover {
+        color: #008080;
+      }
     }
     
 
@@ -145,4 +151,8 @@
   img {
     width: 60px;
   }
+}
+
+mark {
+  background-color: #008080;
 }

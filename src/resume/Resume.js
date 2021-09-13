@@ -1,13 +1,13 @@
 import React from 'react';
 import MyResume from '../resume/my-resume.pdf';
-import '../styles/Resume.scss';
+import '../styles/resume.scss';
 
 
 const Resume = () => {
     return(
         <> 
             <a href={MyResume} target = "_blank" rel='noopener noreferrer' className='resume-link'>
-                <mark>Click here</mark>
+                <mark style={{backgroundColor: '#008080', color: '#FFFFFF', opacity: '0.9'}}>Click here</mark>
                 </a>
         </>
     )

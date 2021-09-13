@@ -4,7 +4,7 @@ import { TextField } from 'formik-material-ui';
 import Button from '@material-ui/core/Button';
 import * as Yup from 'yup';
 import axios from 'axios'
-import '../styles/ContactPage.scss';
+import '../styles/contact-page.scss';
 //dialog for button
 import { withStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
