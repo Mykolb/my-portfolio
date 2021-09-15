@@ -1,6 +1,6 @@
 import React from 'react';
 import MyResume from '../resume/my-resume.pdf';
-import '../styles/resume.scss';
+import '../styles/Resume.scss';
 
 
 const Resume = () => {
