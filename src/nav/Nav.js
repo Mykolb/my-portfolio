@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { NavLink } from "react-router-dom";
 // import { Link, scroller, Events } from "react-scroll";
-import '../styles/Nav.scss';
+import '../styles/nav.scss';
 import MobileNav from './MobileNav';
 
 

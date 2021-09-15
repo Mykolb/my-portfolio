@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
-import '../styles/about.scss';
+import '../styles/About.scss';
 import NameAudio from '../name audio/NameAudio';
 import Resume from '../resume/Resume';
 
