@@ -1,6 +1,6 @@
 # My Portfolio
 
-#This project was made using:
+# This project was made using:
 - React
 - SCSS
 - Axios
