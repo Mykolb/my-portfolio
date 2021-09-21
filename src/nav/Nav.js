@@ -1,11 +1,13 @@
 import React, { useState, useEffect} from 'react';
-import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
+import { NavLink } from "react-router-dom";
+// import { Link, scroller, Events } from "react-scroll";
 import '../styles/Nav.scss';
 import MobileNav from './MobileNav';
+
+
 //Creating component that renders based on screen width 
-
-
 const Nav = () => {
+
 
   const [navState, setNavState] = useState({
 		width: window.innerWidth
@@ -31,87 +33,43 @@ const Nav = () => {
     
 
 
-//scrolling events
-useEffect(() => {
-  Events.scrollEvent.register('begin', function() {
-    console.log('begin', arguments)
-  })
-
-  Events.scrollEvent.register('end', function() {
-    console.log('end', arguments);
-  });
-
-    return() => {
-      Events.scrollEvent.remove('begin')
-      Events.scrollEvent.remove('end')
-    }
-}, [])
-
-
-      //if you use scroll.scrollSomewhere() target element cannot be found
-      const scrollToTop = () => {
-        scroller.scrollTo()
-
-      }
-
-      const scrollToContact = () => {
-        scroller.scrollTo();
-      }
-
-      const scrollToProjects = () => {
-        scroller.scrollTo();
-        
-      }
-
-      const scrollToAbout = () => {
-        scroller.scrollTo();
-      }
 
 
     return(
       <>
       	{!isMobileView ? (
         <nav className='nav-wrapper'>
-                <Link 
-                to='home-section' 
-                activeClass='active'  //class applied when element is reached 
-                spy={true} //make link selected when scroll is at target position
-                smooth={true} //animate the scrolling
-                offset={-70} //additional scrolling px 
-                duration={700}  //time of scroll animation 
-                isDynamic={true} //for content that expands, needs recaulated
+                <NavLink
+                to={`/`}
+                activeClassName='active'  //class applied when element is reached 
                 name='home'
-                onClick={() => scrollToTop()}>Home</Link>
-                <Link 
-                to='about-section' 
-                activeClass='active'  
-                spy={true} 
-                smooth={true} 
-                offset={-100} 
-                duration={700} 
-                isDynamic={true} 
+                // activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                >Home</NavLink>
+                <NavLink
+                to={`/about`}
+                activeClassName='active'  
                 name='about'
-                onClick={() => scrollToAbout()}>About</Link>
-                <Link 
-                to='project-section' 
-                activeClass='active'  
-                spy={true} 
-                smooth={true} 
-                offset={-100} 
-                duration={700} 
-                isDynamic={true} 
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                >About</NavLink>
+                <NavLink
+                to={`/projects`}
+                activeClassName='active'  
                 name='projects'
-                onClick={() => scrollToProjects()}>Projects</Link>
-                <Link 
-                to='contacts-section' 
-                activeClass='active'  
-                spy={true} 
-                smooth={true} 
-                offset={-170} 
-                duration={700} 
-                isDynamic={true} 
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                >Projects</NavLink>
+                <NavLink
+                to={`/contact`}
+                activeClassName='active'  
                 name='contacts'
-                onClick={() => scrollToContact()}>Contact</Link>
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                >Contact</NavLink>
+                <NavLink
+                to={`/sign-in`}
+                activeClassName='active'  
+                name='signin'
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                // onClick={() => submitFormOpen()}
+                >Sign In</NavLink>
         </nav>
         ) :  (  <MobileNav />
         )}

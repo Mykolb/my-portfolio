@@ -4,7 +4,7 @@ import { TextField } from 'formik-material-ui';
 import Button from '@material-ui/core/Button';
 import * as Yup from 'yup';
 import axios from 'axios'
-import '../styles/ContactPage.scss';
+import '../styles/contact-page.scss';
 //dialog for button
 import { withStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
@@ -12,6 +12,7 @@ import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
+
 
 
 const ContactPage = ({ errors, touched, values, status }) => {
@@ -22,7 +23,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
             if(status) {
                 setSignin([...signin, status])
             }
-        }, [status])
+        }, [status, signin])
 
 //for button dialog
     const [open, setOpen] = useState(false);
@@ -47,7 +48,7 @@ const ContactPage = ({ errors, touched, values, status }) => {
   });
   
     const DialogTitle = withStyles(styles)(props => {
-        const { children, classes, onClose } = props;
+        const { children, classes } = props;
     return (
       <MuiDialogTitle disableTypography className={classes.root}>
         <Typography variant="h6">{children}</Typography>
@@ -73,42 +74,42 @@ const ContactPage = ({ errors, touched, values, status }) => {
     return(
     
         <div name='contact' className='contact-container'>
-
+             <section className='contact-info'>
+             <h3>Contact Info:</h3>
+             <p><i className="fa fa-regular fa-envelope"></i> msmykolbenning@gmail.com</p>
+             <p><i className="fa fa-solid fa-map-pin"></i> Charlotte, NC</p>
+            </section>
             <Form className='form'>
-            <h2 id='contacts-section' className='contact-header'>CONTACT</h2>
-            <h3 className='contact-subheader'>Questions? Send me a message!</h3>
             <Field
-            className='field'
             type='name'
             name='name'
-            label='Enter name here'
+            label='Your name'
             component={TextField} //material-ui-text field
-            margin='normal'
-            variant='outlined'
-            fullWidth
-            style={{fontFamily:'Love Ya Like A Sister, cursive'}}
+            margin='dense'
+            variant='standard'
+            style={{fontFamily:'Love Ya Like A Sister, cursive', width: '47%', margin: '1%'}}
             />
+         
             <Field
-            className='field'
             type='email'
             name='email'
-            label='Enter email here'
+            label='Your email'
             component={TextField}
-            margin='normal'
-            variant='outlined'
-            fullWidth
+            margin='dense'
+            variant='standard'
+            style={{ width: '47%', margin: '1%'}}
             />
             <Field
                className='message'
                type='message'
                name='message'
-               label='Enter your message here'
+               label='Your message'
                component={TextField}
-               margin='normal'
-               variant='outlined'
+               margin='dense'
+               variant='standard'
                multiline
                rows='4'
-               fullWidth
+               style={{width: '97%', margin: '1%'}}
             />
             <Button
             className='contact-form-button'
@@ -116,17 +117,12 @@ const ContactPage = ({ errors, touched, values, status }) => {
             margin='normal'
             fontSize='small'
             onClick={handleClickOpen}
-            fullWidth
-            style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190'}}
             >Submit the form</Button>
 
           {/* //modal that pops up afer form submission */}
         <Dialog onClose={handleClose}  open={open}>
-            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-                Contact Submission
-            </DialogTitle>
-            <DialogContent dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}>
-                Your form was submitted. Thank you.
+            <DialogContent onClose={handleClose} dividers style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190', borderTop: 'none', borderBottom: 'none' }}>
+                Your form was submitted. I'll be in touch soon!
             </DialogContent>
             <DialogActions>
              <Button onClick={handleClose} color="primary" style={{borderRadius: '15px', fontFamily:'Love Ya Like A Sister, cursive', color: '#008080'}}>
@@ -135,7 +131,6 @@ const ContactPage = ({ errors, touched, values, status }) => {
              </DialogActions>
         </Dialog>
              </Form>
-            
         </div>
     )
 }
@@ -160,7 +155,7 @@ validationSchema: Yup.object().shape({
     .required(),
     message: Yup.string()
     .required()
-    .max(250, 'Message hass exceeded character limit')
+    .max(500, 'Message must be 500 characters or less')
     }),
 
 

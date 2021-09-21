@@ -1,32 +1,38 @@
 .footer-container {
     display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     justify-content: center;
-    border-top: 5px dotted #EBB604;
-    margin: 3.5%;
-    padding: 1%;
+    background-color: #FFFFFF;
+    // border-top: 5px dotted #EBB604;
+    padding: .5%;
 }
 
-#icon1 {
-    color: #211f1f;
+#github-icon {
+    color: #E63629;
+    border: none;
 }
 
- #icon1:hover {
-    text-decoration: underline;
+ #github-icon:hover {
+    opacity: 0.9;
  }
 
-#icon2 {
-    color: #0077B5;
+#linkedin-icon{
+    color: #EBB604;
+    border: none;
 }
 
-#icon2:hover {
-    text-decoration: underline;
+#linkedin-icon:hover {
+    opacity: 0.9;
  }
 
 
- #icon3 {
-    color: #1DA1F2;
+ #twitter-icon {
+    color: #008080;
+    border: none;
 }
 
-#icon3:hover {
-    text-decoration: underline;
+#twitter-icon:hover {
+    opacity: 0.9;
  }

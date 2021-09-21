@@ -1,63 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import { Link,  animateScroll as scroll, scroller, Events } from "react-scroll";
+import React, { useState } from 'react'
+import { NavLink } from "react-router-dom";
 import Menu from '@material-ui/core/Menu';
 import MenuTwoToneIcon  from '@material-ui/icons/MenuTwoTone';
 
 
-
 export default function MobileNav() {
-    const [anchorEl, setAnchorEl] = useState(null);
-    
 
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [openMenu, setOpenMenu] = useState(false);
+    
     const handleClick = e => {
       setAnchorEl(e.currentTarget);
     };
   
     const handleClose = () => {
       setAnchorEl(null);
+      setOpenMenu(false)
     };
-
-
-//scrolling events
-useEffect(() => {
-  Events.scrollEvent.register('begin', function() {
-    console.log('begin', arguments)
-  })
-
-  Events.scrollEvent.register('end', function() {
-    console.log('end', arguments);
-  });
-
-    return() => {
-      Events.scrollEvent.remove('begin')
-      Events.scrollEvent.remove('end')
-    }
-}, [])
-
-
-
-//scrolling 
-
-      const scrollToContact = () => {
-        scroller.scrollTo();
-      }
-
-      const scrollToProjects = () => {
-        scroller.scrollTo();
-      }
-
-      const scrollToAbout = () => {
-        scroller.scrollTo();
-      }
 
      //changed width from 5% to auto
     return (
         <div className='nav-wrapper'> 
-          <MenuTwoToneIcon style={{ 
-            height: '65px', 
-            width: 'auto',
-             }}   
-             onClick={handleClick}>
+          <MenuTwoToneIcon 
+             id='ham-icon' 
+             onClick={handleClick}
+             >
             Open Menu
           </MenuTwoToneIcon>
           <Menu
@@ -66,37 +33,41 @@ useEffect(() => {
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}
+            //prevents popup err from displaying due to max-height
+            marginThreshold={0}
             >
-            <Link
-            to='about-section' 
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-90} 
-            duration={500}  
-            isDynamic={true}
-            name='about'
-            onClick={() => scrollToAbout()}>About</Link>
-            <Link
-            to='project-section' 
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-90} 
-            duration={500}  
-            isDynamic={true}
+            <NavLink
+            to={`/about`}
+            activeClassName='active'  
+            name='/about'
+            style={{color: '#B3A190', textDecoration: 'none'}}
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
+            onClick={handleClose}
+            >About</NavLink>
+            <NavLink
+            to={`/projects`}
+            activeClassName='active'  
             name='projects'
-            onClick={() => scrollToProjects()}>Projects</Link>
-            <Link 
-            to='contacts-section'
-            activeClass='active'  
-            spy={true} 
-            smooth={true} 
-            offset={-150} 
-            duration={500}  
-            isDynamic={true}
+            style={{color: '#B3A190', textDecoration: 'none'}}
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
+            onClick={handleClose}
+            >Projects</NavLink>
+            <NavLink 
+            to={`/contact`}
+            activeClassName='active'  
             name='contacts'
-            onClick={() => scrollToContact()}>Contact</Link>
+            style={{color: '#B3A190', textDecoration: 'none'}}
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
+            onClick={handleClose}
+            >Contact</NavLink>
+            <NavLink
+            to={`/sign-in`}
+            activeClassName='active'  
+            name='signin'
+            style={{color: '#B3A190', textDecoration: 'none'}}
+            activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
+            onClick={handleClose}
+            >Sign In</NavLink>
           </Menu>
         </div>
       );
@@ -105,3 +76,4 @@ useEffect(() => {
 
 
 
+  

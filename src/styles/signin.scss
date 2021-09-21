@@ -1,0 +1,87 @@
+.signin-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 15px;
+    max-width: 1000px;
+    transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    // border: 2px solid #B3A190;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        box-shadow: none;
+        transform: none;
+        -ms-transform: none;
+        align-items: initial;
+    }
+
+    @media screen and (max-width: 800px) {
+       width: 96%;
+    }
+
+}
+
+.signin-image-container {
+    height: 400px;
+    text-align: center;
+
+
+
+    @media screen and (max-width: 500px) {
+        height: auto;
+        background-color: #FFFFFF;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.signin-image {
+    border-radius: 15px;
+    height: 400px;
+
+    @media screen and (max-width: 500px) {
+        height: 300px;
+    }
+}
+
+.sign-in-header {
+    text-align: center;
+}
+
+.signin-form {
+    border-radius: 15px;
+    // border: 2px solid #B3A190;
+    max-width: 30%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 500px) {
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+.signin-input {
+    margin: 1%;
+}
+
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signin-form-btn.MuiButton-fullWidth {
+    border-radius: 15px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #FFFFFF;
+    height: 40px;
+    margin-top: 5%;
+    background-color: #008080;
+
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
+
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signin-form-btn.MuiButton-fullWidth:hover {
+    opacity: 0.9;
+}

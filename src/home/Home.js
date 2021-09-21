@@ -1,15 +1,17 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom';
-import '../styles/Home.scss';
+import '../styles/home.scss';
 import ParticleAnimation from '../particle_animation/ParticleAnimation'
 import NameAudio from '../name audio/NameAudio';
-import { Link, animateScroll as scroll, scroller} from 'react-scroll';
-
-const Home = () => {
+import { Link } from "react-router-dom";
 
 
-const scrollToTop = () => {
-	scroller.scrollTo()
+
+const Home = props => {
+
+//prevent blank home screen from displaying on mobile/smaller tablet view
+if(window.innerWidth <= 800) {
+	props.history.push('/about')
 }
 
 
@@ -23,14 +25,9 @@ return(
 		<p className='intro-header'>definition: web developer{' '}</p>
 		{/* wrapping icon in link tag */}
 			<Link
-			to='about-section'
+			to={`/about`}
 			name='about'
-			spy={true} 
-            smooth={true} 
-            offset={-100} 
-            duration={200} 
-            isDynamic={true} 
-			onClick={() => scrollToTop()}><i class="fas fa-arrow-right fa-2x" id='arrow-icon'/>
+			><i className="fas fa-arrow-right fa-2x" id='arrow-icon'/>
 			</Link>
 	</div>
     </div>
