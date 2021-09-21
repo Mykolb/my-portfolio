@@ -7,9 +7,12 @@ import { Link } from "react-router-dom";
 
 
 
-const Home = () => {
+const Home = props => {
 
-
+//prevent blank home screen from displaying on mobile/smaller tablet view
+if(window.innerWidth <= 800) {
+	props.history.push('/about')
+}
 
 
 return(

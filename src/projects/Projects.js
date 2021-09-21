@@ -50,17 +50,14 @@ const Projects = () => {
 
 <Card className='project-card'>
 <CardActionArea>
-  <CardMedia
-    className='project-img'
-    image="https://images.pexels.com/photos/739047/pexels-photo-739047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"  
-    title="Washington Monument"
-  />
+<div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
+  <iframe src="https://www.loom.com/embed/95b683c7bb9b405ea97745b61d080be3?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Video" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Jeep Prices Web Scraper
     </Typography>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
-      A web scraper that collects data from two car websites and saves them to a database.
+      A web scraper built with Puppeteer that collects data from two car websites and saves them to a MongoDB database.
     </Typography>
   </CardContent>
 </CardActionArea>
@@ -86,18 +83,18 @@ const Projects = () => {
   />
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
-      TBA Project 3
+      Jeep Price Front End
     </Typography>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
-      Description
+      Front end React application to display the information from the Jeep Prices Web Scraper. <em>Please note that this is a work in progress.</em>
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions className='project-card-btn'>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/Jeep-Repo-FE' target='_blank' rel='noopener noreferrer'>
   <i className=" fa fa-solid fa-code"></i>
   </Button>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-repo-fe.vercel.app/' target='_blank' rel='noopener noreferrer'>
   <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
