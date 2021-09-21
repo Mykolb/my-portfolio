@@ -20,18 +20,18 @@ const Projects = () => {
       <div className='project-card-container'>   
     <Card className='project-card'>
       <CardActionArea>
-        <CardMedia
-          className='project-img'
-          image="https://images.pexels.com/photos/261093/pexels-photo-261093.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
-          title="Washington Monument during sunset"
-         />
+      <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
+        <iframe src="https://www.loom.com/embed/18e195e0e34e4a4b9f1470d5ac228d15?hide_title=true&hide_owner=true" frameborder="0"  title='Testing BW-MiracleMessages Backend in Postman' webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe>
+        </div>
         </CardActionArea>
         <CardContent >
           <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
           Bw-MiracleMessages/Back-End
           </Typography>
           <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }}  variant="body2" color="textSecondary" component="p">
-            This API was created for the app Miracle Messages. Miracle Messages allows volunteers to post a missing person looking to reconnect with their family members.
+            This API was created for the app Miracle Messages. Miracle Messages allows volunteers to post a missing person looking to reconnect with their family members. 
+            <em><p>Note: This API requires authentication, so I've attached a demo video above. </p></em>
+          
           </Typography>
         </CardContent>
      
@@ -76,11 +76,8 @@ const Projects = () => {
 
 <Card className='project-card'>
 <CardActionArea>
-  <CardMedia
-    className='project-img'
-    image="https://images.pexels.com/photos/1043458/pexels-photo-1043458.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
-    title="Cherry Blossoms"
-  />
+<div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
+  <iframe src="https://www.loom.com/embed/cb4e3fbd09bc4a11b05e864f191c9c25?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Jeep Price Front End
@@ -94,13 +91,13 @@ const Projects = () => {
   <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/Jeep-Repo-FE' target='_blank' rel='noopener noreferrer'>
   <i className=" fa fa-solid fa-code"></i>
   </Button>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-repo-fe.vercel.app/' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-repo-fe-mdm9ra0ht-mykolbenning.vercel.app/' target='_blank' rel='noopener noreferrer'>
   <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
 </Card>
 
-<Card className='project-card'>
+{/* <Card className='project-card'>
 <CardActionArea>
   <CardMedia
     className='project-img'
@@ -124,7 +121,7 @@ const Projects = () => {
   <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
-</Card>
+</Card> */}
 
 </div> 
 {/* <AddProjectForm /> */}
