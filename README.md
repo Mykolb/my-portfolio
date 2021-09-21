@@ -12,6 +12,6 @@ This project was made using:
 - Formik
 - Yup
 - React Particles JS
-- And a whole lotts love
+- And a whole lotta love
 
 Thanks for stopping by! 
