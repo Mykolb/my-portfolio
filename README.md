@@ -1,6 +1,9 @@
 # My Portfolio
 
-# This project was made using:
+
+
+This project was made using:
+
 - React
 - SCSS
 - Axios
@@ -10,3 +13,5 @@
 - Yup
 - React Particles JS
 - And a whole lotts love
+
+Thanks for stopping by! 
