@@ -3,6 +3,18 @@
     flex-wrap: wrap;
     margin: 0 3.5% 3.5% 3.5%;
     padding-bottom: 3.5%;
+
+    @media screen and (max-width: 414px) {
+        height: calc(75% + 100%);
+    }
+
+    @media screen and (max-width: 399px) {
+        height: calc(93% + 100%);
+    }
+    @media screen and (max-width: 359px) {
+        height: calc(127% + 100%);
+    }
+
 }
 
 .project-card-container {
@@ -28,7 +40,6 @@
     max-width: 400px;
     flex-direction: column;
     margin: 3%;
-    padding: 1%;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
