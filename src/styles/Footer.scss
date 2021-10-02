@@ -7,6 +7,10 @@
     background-color: #FFFFFF;
     // border-top: 5px dotted #EBB604;
     padding: .5%;
+
+    @media screen and (max-width: 499px){
+        display: none;
+    }
 }
 
 #github-icon {

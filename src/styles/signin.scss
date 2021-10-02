@@ -11,16 +11,18 @@
     transform: translate(0, 50%);
     -ms-transform: translate(0, 50%);
     // border: 2px solid #B3A190;
+
+
+    @media screen and (max-width: 800px) {
+       width: 96%;
+    }
     @media screen and (max-width: 500px) {
         flex-direction: column;
         box-shadow: none;
         transform: none;
         -ms-transform: none;
         align-items: initial;
-    }
-
-    @media screen and (max-width: 800px) {
-       width: 96%;
+        width: 100%;
     }
 
 }
@@ -44,6 +46,9 @@
 
     @media screen and (max-width: 500px) {
         height: 300px;
+    }
+    @media screen and (max-width: 399px) {
+        height: 250px;
     }
 }
 
@@ -78,8 +83,12 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signin-form-btn.MuiButto
 
     @media screen and (max-width: 500px) {
         width: 90%;
+        margin-top: 10%;
     }
 
+    @media screen and (max-width: 414px) {
+        margin-top: 15%;
+    }
 }
 
 button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signin-form-btn.MuiButton-fullWidth:hover {

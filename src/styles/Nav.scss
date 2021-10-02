@@ -59,6 +59,12 @@ zindex fixed overlapping nav */
     color: #E63629;
 }
 
+@media screen and (min-width: 500px) {
+    .mobile-nav-icons {
+        display: none;
+    }
+}
+
 svg#ham-icon {
     height: 50px; 
     width: auto;
@@ -113,3 +119,4 @@ ul.MuiList-root.MuiMenu-list.MuiList-padding {
     padding-top: 0;
     padding-bottom: 0;
 }
+

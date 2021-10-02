@@ -17,18 +17,20 @@
 
 
 
-    @media screen and (max-width: 500px) {
-            flex-direction: column;
-            height: 100%;
-            transform: none;
-            -ms-transform: none;
-            max-width: 100%;
-            box-shadow: none;
-    }
+
 
     @media screen and (max-width: 800px) {
         width: 96%;
      }
+     @media screen and (max-width: 500px) {
+        flex-direction: column;
+        height: 100%;
+        transform: none;
+        -ms-transform: none;
+        max-width: 100%;
+        box-shadow: none;
+        width: 100%;
+}
 }
 
 .contact-info {
@@ -121,9 +123,12 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-text.contact-form-button {
 
     @media screen and (max-width: 500px) {
         width: 90%;
+        margin-top: 10%;
     }
+    @media screen and (max-width: 414px) {
+        margin-top: 15%;
+ }
 }
-
 .MuiPaper-root.MuiCard-root.project-card.MuiPaper-elevation1.MuiPaper-rounded {
     border-radius: 15px;
 }
