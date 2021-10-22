@@ -68,6 +68,19 @@ export default function MobileNav() {
             activeStyle={{ color: "#E63629", cursor: "pointer", textDecoration: 'none' }}
             onClick={handleClose}
             >Sign In</NavLink>
+            <div className='mobile-nav-icons'>
+              <a href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+                <i className="fab fa-github fa-1x  fa-border github" id='github-icon' />
+            </a>
+
+            <a href='https://Linkedin.com' target='_blank' rel='noopener noreferrer'>
+              <i className="fab fa-linkedin-in fa-1x  fa-border linkedin" id='linkedin-icon' />
+            </a>
+
+            <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+              <i className="fab fa-twitter fa-1x  fa-border twitter" id='twitter-icon' />
+            </a>
+            </div>
           </Menu>
         </div>
       );

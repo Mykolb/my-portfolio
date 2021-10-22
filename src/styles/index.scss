@@ -24,8 +24,4 @@ body {
 
   .container {
     height: 100vh;
-
-    @media screen and (max-width: 359px) {
-      margin-bottom: 20%;
-    }
   }

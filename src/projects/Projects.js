@@ -76,13 +76,13 @@ const Projects = () => {
 <Card className='project-card'>
 <CardActionArea>
 <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
-  <iframe src="https://www.loom.com/embed/cb4e3fbd09bc4a11b05e864f191c9c25?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
+  <iframe src="https://www.loom.com/embed/3e69be78af514bad9dbda781aaed1156?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Jeep Price Front End
     </Typography>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
-      Front end React application to display the information from the Jeep Prices Web Scraper. <em>Please note that this is a work in progress.</em>
+      React dashboard built to display the information from the Jeep web scraper. <em>Please note that this is a work in progress.</em>
     </Typography>
   </CardContent>
 </CardActionArea>

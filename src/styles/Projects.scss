@@ -4,17 +4,14 @@
     margin: 0 3.5% 3.5% 3.5%;
     padding-bottom: 3.5%;
 
-    @media screen and (max-width: 414px) {
-        height: calc(75% + 100%);
+
+    @media screen and (min-width: 501px) and (max-width: 1004px) {
+        margin: 0;
     }
 
-    @media screen and (max-width: 399px) {
-        height: calc(93% + 100%);
+    @media screen and (max-width: 500px) {
+        margin: 0;
     }
-    @media screen and (max-width: 359px) {
-        height: calc(127% + 100%);
-    }
-
 }
 
 .project-card-container {
@@ -23,14 +20,21 @@
     margin: auto;
 
 
+    @media screen and (min-width: 801px) and (max-width: 1004px) {
+        margin: 3% auto 6% auto;
+    }
+
+
     @media screen and (max-width: 800px) {
         display: grid;
         grid-template-columns: auto auto;
         margin: auto;
+        margin: 3% auto 6% auto;
     }
 
     @media screen and (max-width: 500px) {
         grid-template-columns: none;
+        margin: 4% auto 10% auto;
     }
 
 
@@ -39,6 +43,7 @@
 .project-card {
     max-width: 400px;
     flex-direction: column;
+    height: fit-content;
     margin: 3%;
     justify-content: center;
     align-items: center;
