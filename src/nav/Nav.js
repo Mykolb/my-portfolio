@@ -43,30 +43,35 @@ const Nav = () => {
                 to={`/`}
                 activeClassName='active'  //class applied when element is reached 
                 name='home'
-                // activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                exact
                 >Home</NavLink>
                 <NavLink
                 to={`/about`}
                 activeClassName='active'  
                 name='about'
                 activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                exact
                 >About</NavLink>
                 <NavLink
                 to={`/projects`}
                 activeClassName='active'  
                 name='projects'
                 activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                exact
                 >Projects</NavLink>
                 <NavLink
                 to={`/contact`}
                 activeClassName='active'  
                 name='contacts'
                 activeStyle={{ color: "#E63629", cursor: "pointer" }}
+                exact
                 >Contact</NavLink>
                 <NavLink
                 to={`/sign-in`}
                 activeClassName='active'  
                 name='signin'
+                exact
                 activeStyle={{ color: "#E63629", cursor: "pointer" }}
                 // onClick={() => submitFormOpen()}
                 >Sign In</NavLink>

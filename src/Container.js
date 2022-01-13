@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from "react-router-dom";
+import { Route  } from "react-router-dom";
 import Home from './home/Home'
 import Nav from './nav/Nav';
 import About from './about/About';

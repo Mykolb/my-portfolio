@@ -96,32 +96,29 @@ const Projects = () => {
 </CardActions>
 </Card>
 
-{/* <Card className='project-card'>
+<Card className='project-card'>
 <CardActionArea>
-  <CardMedia
-    className='project-img'
-    image="https://images.pexels.com/photos/1462124/pexels-photo-1462124.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
-    title="Japanese Temple and Cherry Blossoms"
-  />
+<div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
+  <iframe src="https://www.loom.com/embed/d586adf4695a4673b3aac0b9dac2bc25?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="airbnb landing page clone" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
-      TBA Project 4
+      Airbnb Landing Page Clone
     </Typography>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
-      Description
+      Coding challenge to replicate the <a href='https://www.airbnb.com/' target='_blank' rel='noreferrer noopener' id='airbnb-link'>Airbnb landing page</a>. 
+      Requirements were to make it responsive for mobile and desktop using Material UI.
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions className='project-card-btn'>
-  <Button  style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/callexperts-challenge' target='_blank' rel='noopener noreferrer'>
   <i className=" fa fa-solid fa-code"></i>
   </Button>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary">
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://callexperts-challenge.vercel.app/' target='_blank' rel='noopener noreferrer'>
   <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
-</Card> */}
-
+</Card>
 </div> 
 {/* <AddProjectForm /> */}
 </div>
