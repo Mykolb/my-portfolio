@@ -76,7 +76,7 @@ const Projects = () => {
 <Card className='project-card'>
 <CardActionArea>
 <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
-  <iframe src="https://www.loom.com/embed/3e69be78af514bad9dbda781aaed1156?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
+  <iframe src="https://www.loom.com/embed/f54329b8b2e246a6922db0f4d8e50b73" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Jeep Price Front End
