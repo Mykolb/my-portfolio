@@ -87,10 +87,10 @@ const Projects = () => {
   </CardContent>
 </CardActionArea>
 <CardActions className='project-card-btn'>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/Jeep-Repo-FE' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/jeep-prices-repo-fe' target='_blank' rel='noopener noreferrer'>
   <i className=" fa fa-solid fa-code"></i>
   </Button>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-repo-fe-mdm9ra0ht-mykolbenning.vercel.app/' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-prices-repo-fe.vercel.app/' target='_blank' rel='noopener noreferrer'>
   <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
