@@ -82,7 +82,7 @@ const Projects = () => {
       Jeep Price Front End
     </Typography>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
-      React dashboard built to display the information from the Jeep web scraper. <em>Please note that this is a work in progress.</em>
+      React dashboard built to display the data from the Jeep scraper api.
     </Typography>
   </CardContent>
 </CardActionArea>
