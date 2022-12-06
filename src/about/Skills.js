@@ -6,6 +6,7 @@ import cssIcon from '../assets/icons/css3.png';
 import htmlIcon from '../assets/icons/html5.png';
 import sassIcon from '../assets/icons/sass.png';
 
+
 const Skills = () => {
     return(
         <section className='skills-icons'>

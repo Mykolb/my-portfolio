@@ -18,16 +18,17 @@
     border: none;
 }
 
- #github-icon:hover {
-    opacity: 0.9;
- }
 
 #linkedin-icon{
     color: #EBB604;
     border: none;
 }
 
-#linkedin-icon:hover {
+#linkedin-icon:hover, 
+#twitter-icon:hover,
+#resume-icon:hover,
+#github-icon:hover 
+ {
     opacity: 0.9;
  }
 
@@ -37,6 +38,7 @@
     border: none;
 }
 
-#twitter-icon:hover {
-    opacity: 0.9;
- }
+#resume-icon {
+    color: #B3A190;
+    border: none;
+}

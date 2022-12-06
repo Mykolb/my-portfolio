@@ -20,7 +20,8 @@ const Projects = () => {
     <Card className='project-card'>
       <CardActionArea>
       <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
-        <iframe src="https://www.loom.com/embed/18e195e0e34e4a4b9f1470d5ac228d15?hide_title=true&hide_owner=true" frameborder="0"  title='Testing BW-MiracleMessages Backend in Postman' webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe>
+      <iframe src="https://www.loom.com/embed/18e195e0e34e4a4b9f1470d5ac228d15?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0"  title='Testing BW-MiracleMessages Backend in Postman' webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe>
+
         </div>
         </CardActionArea>
         <CardContent >
@@ -50,7 +51,7 @@ const Projects = () => {
 <Card className='project-card'>
 <CardActionArea>
 <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
-  <iframe src="https://www.loom.com/embed/95b683c7bb9b405ea97745b61d080be3?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Video" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
+<iframe src="https://www.loom.com/embed/95b683c7bb9b405ea97745b61d080be3?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Video" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Jeep Prices Web Scraper
@@ -76,7 +77,7 @@ const Projects = () => {
 <Card className='project-card'>
 <CardActionArea>
 <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
-  <iframe src="https://www.loom.com/embed/3e69be78af514bad9dbda781aaed1156?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
+<iframe src="https://www.loom.com/embed/f54329b8b2e246a6922db0f4d8e50b73?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Jeep Web Scraper Dashboard" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Jeep Price Front End
@@ -99,7 +100,7 @@ const Projects = () => {
 <Card className='project-card'>
 <CardActionArea>
 <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
-  <iframe src="https://www.loom.com/embed/d586adf4695a4673b3aac0b9dac2bc25?hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="airbnb landing page clone" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
+<iframe src="https://www.loom.com/embed/d586adf4695a4673b3aac0b9dac2bc25?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="airbnb landing page clone" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe></div>
   <CardContent>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} component="h2">
       Airbnb Landing Page Clone

@@ -1,12 +1,14 @@
-a.resume-link {
-    color: #000000;
-    text-decoration: none;
+#resume-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
-a.resume-link:hover {
-   text-decoration: underline;
-}
+@media screen and (max-width: 500px) {
 
-mark {
-    background-color: rgb(235, 182, 4);
+
+    .resume {
+        width: auto;
+        height: auto;
+    }
 }
