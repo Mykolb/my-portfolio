@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Menu from "@material-ui/core/Menu";
 import MenuTwoToneIcon from "@material-ui/icons/MenuTwoTone";
-import Resume from "../resume/Resume2.pdf";
+import Resume from "../resume/my-resume.pdf";
 
 
 export default function MobileNav() {
