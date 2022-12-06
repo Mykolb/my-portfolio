@@ -20,7 +20,7 @@ return(
     <div id='home-section' className='welcome-div' > 
 	<ParticleAnimation />
 	<div className='introduction'>
-		<h2 className='intro-header'> mykol <em>(noun)</em></h2>
+		<h2 className='intro-header'> Mykol <em>(noun)</em></h2>
 		<NameAudio />
 		<p className='intro-header'>definition: web developer{' '}</p>
 		{/* wrapping icon in link tag */}

@@ -1,14 +1,11 @@
 .entireContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    margin: 3.5%;
+    height: 100%;
+    width: 100%;
    
 
     @media screen and (max-width:500px) {
             display: flex;
             margin: 0 auto; 
-            margin: 3.5%;  
     }
 
   
@@ -24,135 +21,50 @@
       }
     }
     
-
-
-.aboutContainer {
-    margin: 0 auto;
+.outer-about-wrapping-container {
+  margin: 0 auto;
+  display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
-    
-  }
+    align-items: center;
+    transform: translate(0, 50%);
 
-  .aboutHeading {
-    font-family: 'Love Ya Like A Sister', cursive;
-    color: #B3A190;
-    font-size: 2rem;
-    
-  }
+    @media screen and (max-width:500px) {
+      transform: translate(0, 10%);
+    }
 
-  .mobile-aboutHeading {
+    @media screen and (max-width:800px) {
+      transform: translate(0, 20%);
+    }
+
+}
+
+
+  .inner-about-wrapping-container {
+    border: 2px solid #ECB505;
+    width: 50%;
+    border-radius: 15px;
+
+
     @media screen and (max-width: 500px) {
-      margin-top: 0;
-    }
-    @media screen and (max-width: 800px) {
-     margin-top: 15%;
-   }
-  }
-
-
-  .bioContainer {
-    width: 100%;
-    padding-left: 2%;
-    font-size: 1.25rem;
-
-    @media screen and (max-width:500px) {
-      display: grid;
-      justify-items: center;
+      width: 90%;
     }
 
     @media screen and (max-width:800px) {
-      display: grid;
-      justify-items: center;
+      width: 90%;
     }
 
   }
 
-  .bio {
-    text-align: center;
-    width: 100%;
-    font-size: 1.30rem;
-    margin-top: 6%;
- 
-
-    @media screen and (max-width:500px) {
-      text-align: center;
-      max-width: 500px;
-      margin: 0 auto;
-      font-size: 1.30rem;
-      line-height: 1.4;
-      letter-spacing: 1.2px;
-   }
-
-   @media screen and (max-width:800px) {
-    text-align: center;
-    padding: 2%;
-    width: 500px;
-    margin: 0 auto;
-    font-size: 1.30rem;
+  #blog-link {
+    color: #ECB505;
   }
-}
 
-
-  .MuiGrid-grid-xs-6 {
-
-    @media screen and (max-width:500px) {
-      max-width: 100%;
-   }
-
+  #blog-link:hover {
+   opacity: 0.9;
   }
+
   
-
-
-
-.makeStyles-bigAvatar-4 {
-    @media screen and (max-width:500px) {
-        width: 0px;
-        height: 0px;
-        margin: 0%;
-        border-radius: 0%;
-        display: none;
-      }
-
-      @media screen and (max-width:800px) {
-        width: 0px;
-        height: 0px;
-        margin: 0%;
-        border-radius: 0%;
-        display: none;
-     }
 }
 
 
-
-.makeStyles-bioContainer-5 {
-
-    @media screen and (max-width:500px) {
-        width: 100%;
-      }
-      @media screen and (max-width:800px) {
-        width: 100%
-     }
-}
-
-
-
-.makeStyles-bio-6 {
-    @media screen and (max-width:800px) {
-       font-size: 1rem;
-    }
-}
-
-}
-
-.skills-icons {
-  margin: 1%;
-  max-width: 400px;
-  
-  img {
-    width: 60px;
-  }
-}
-
-mark {
-  background-color: #008080;
-}

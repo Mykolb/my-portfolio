@@ -1,17 +1,15 @@
-import React from 'react';
-import MyResume from '../resume/my-resume.pdf';
-import '../styles/Resume.scss';
-
+import React from "react";
+import MyResume from "../resume/my-resume.pdf";
 
 const Resume = () => {
-    return(
-        <> 
-            <a href={MyResume} target = "_blank" rel='noopener noreferrer' className='resume-link'>
-                <mark style={{backgroundColor: '#008080', color: '#FFFFFF', opacity: '0.9'}}>Click here</mark>
-                </a>
-        </>
-    )
-}
-
+  return (
+    <a href={MyResume} target="_blank" rel="noopener noreferrer">
+      <i
+        className="fa fa-file-text-o fa-2x fa-border resume"
+        id="resume-icon"
+      ></i>
+    </a>
+  );
+};
 
 export default Resume;
