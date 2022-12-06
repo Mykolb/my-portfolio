@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Menu from "@material-ui/core/Menu";
 import MenuTwoToneIcon from "@material-ui/icons/MenuTwoTone";
-import Resume from "../resume/my-resume.pdf";
+import MyResume from "../resume/my-resume.pdf";
 
 
 export default function MobileNav() {
@@ -122,7 +122,7 @@ export default function MobileNav() {
               id="twitter-icon"
             />
           </a>
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <a href={MyResume} target="_blank" rel="noopener noreferrer">
             <i
               className="fa fa-file-text-o fa-1x fa-border resume"
               id="resume-icon"

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.scss";
-import Resume from "../resume/my-resume.pdf";
+import MyResume from "../resume/my-resume.pdf";
 
 const Footer = () => {
   return (
@@ -35,7 +35,7 @@ const Footer = () => {
           />
         </a>
 
-        <a href={Resume} target="_blank" rel="noopener noreferrer">
+        <a href={MyResume} target="_blank" rel="noopener noreferrer">
           <i
             className="fa fa-file-text-o fa-2x fa-border resume"
             id="resume-icon"
