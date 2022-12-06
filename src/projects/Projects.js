@@ -21,7 +21,6 @@ const Projects = () => {
       <CardActionArea>
       <div style={{position: "relative", paddingBottom: "62.5%", height: "0"}}>
       <iframe src="https://www.loom.com/embed/18e195e0e34e4a4b9f1470d5ac228d15?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" frameborder="0"  title='Testing BW-MiracleMessages Backend in Postman' webkitallowfullscreen mozallowfullscreen allowfullscreen style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}}></iframe>
-
         </div>
         </CardActionArea>
         <CardContent >
@@ -83,15 +82,15 @@ const Projects = () => {
       Jeep Price Front End
     </Typography>
     <Typography style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#B3A190' }} variant="body2" color="textSecondary" component="p">
-      React dashboard built to display the information from the Jeep web scraper. <em>Please note that this is a work in progress.</em>
+      React dashboard built to display the data from the Jeep scraper api.
     </Typography>
   </CardContent>
 </CardActionArea>
 <CardActions className='project-card-btn'>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/Jeep-Repo-FE' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#EBB604' }} size="small" color="primary" href='https://github.com/Mykolb/jeep-prices-repo-fe' target='_blank' rel='noopener noreferrer'>
   <i className=" fa fa-solid fa-code"></i>
   </Button>
-  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-repo-fe-mdm9ra0ht-mykolbenning.vercel.app/' target='_blank' rel='noopener noreferrer'>
+  <Button style={{fontFamily:'Love Ya Like A Sister, cursive', color: '#008080' }} size="small" color="primary" href='https://jeep-prices-repo-fe.vercel.app/' target='_blank' rel='noopener noreferrer'>
   <i className="fa fa-solid fa-globe"></i>
   </Button>
 </CardActions>
