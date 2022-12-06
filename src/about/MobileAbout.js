@@ -23,7 +23,7 @@ import CardContent from "@material-ui/core/CardContent";
                     things you should know about me before reaching out. I like:{" "}
                   </p>
                   <ul>
-                    <li>Front end and backend.</li>
+                    <li>Frontend and backend.</li>
                     <li>CSS and APIs.</li>
                     <li>All things AWS (I'm certified!).</li>
                     <li>
