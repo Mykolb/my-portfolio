@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.scss";
-import MyResume from "../resume/my-resume.pdf";
+import Resume from "../resume/Resume";
 
 const Footer = () => {
   return (
@@ -34,13 +34,7 @@ const Footer = () => {
             id="twitter-icon"
           />
         </a>
-
-        <a href={MyResume} target="_blank" rel="noopener noreferrer">
-          <i
-            className="fa fa-file-text-o fa-2x fa-border resume"
-            id="resume-icon"
-          ></i>
-        </a>
+        <Resume />
       </div>
     </div>
   );
